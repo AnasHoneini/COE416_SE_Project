@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.se_application.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.se_application.app.modules.gradesectionkg.ui.GradeSectionkgActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.parentviewone.ui.ParentViewOneActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.se_application.app.modules.loginpage.ui.LoginPageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.se_application.app.modules.studentlist.ui.StudentListActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.grade7nine.ui.Grade7NineActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.parentviewfour.ui.ParentViewFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.gradesectionkgone.ui.GradeSectionkgOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.grade10twelve.ui.Grade10TwelveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.studentdetail.ui.StudentDetailActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.viewreports.ui.ViewReportsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.studentfeedbackone.ui.StudentFeedbackOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.parentviewthree.ui.ParentViewThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.parentviewfive.ui.ParentViewFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.parentviewtwo.ui.ParentViewTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.dashboard.ui.DashboardActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.signuppage.ui.SignupPageActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.studentfeedback.ui.StudentFeedbackActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.form.ui.FormActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.gradeelementary.ui.GradeElementaryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.se_application.app.modules.classevaluation.ui.ClassEvaluationActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

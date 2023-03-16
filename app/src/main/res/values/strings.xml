@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">se_app</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="msg_fight_with_a_fr">Fight with a friend</string>
+<string name="lbl_bullying">Bullying</string>
+<string name="lbl_date_23_1_2023">Date: 23/1/2023</string>
+<string name="lbl_no">No.</string>
+<string name="lbl_email_address">Email Address</string>
+<string name="msg_tap_to_view_mor">Tap to view more details about each student</string>
+<string name="lbl_mother_s_name">Mother\u2019s Name: </string>
+<string name="lbl_joe_tekli">Joe Tekli</string>
+<string name="lbl_gr_3">Gr 3</string>
+<string name="lbl_gr_4">Gr 4</string>
+<string name="lbl_gr_5">Gr 5</string>
+<string name="lbl_signup">Signup</string>
+<string name="lbl_kindergarten">Kindergarten</string>
+<string name="lbl_gr_6">Gr 6</string>
+<string name="lbl_description">Description</string>
+<string name="lbl_gr_7">Gr 7</string>
+<string name="lbl_gr_8">Gr 8</string>
+<string name="lbl_gr_9">Gr 9</string>
+<string name="lbl_12_30_pm">12:30 PM</string>
+<string name="msg_exposed_to_verb">Exposed to Verbal Abuse</string>
+<string name="lbl_gr_10">Gr 10</string>
+<string name="lbl_phone_number">Phone Number:</string>
+<string name="lbl_gr_11">Gr 11</string>
+<string name="lbl_parent">Parent</string>
+<string name="lbl_gr_12">Gr 12</string>
+<string name="lbl_gr_1">Gr 1</string>
+<string name="lbl_welcome_user">Welcome, user</string>
+<string name="lbl_gr_2">Gr 2</string>
+<string name="lbl_961_70">+961 70 *** ***</string>
+<string name="lbl_kg_3">KG 3</string>
+<string name="lbl_kg_2">KG 2</string>
+<string name="lbl_4_23_2023">4/23/2023</string>
+<string name="msg_dec_10_2022_1">Dec, 10, 2022
+10:00 AM</string>
+<string name="lbl_grades_1_6">Grades 1-6</string>
+<string name="lbl_more_than_75">More than 75%</string>
+<string name="lbl_student_s_case">Student\u2019s Case:</string>
+<string name="msg_dec_10_2022_12">Dec, 10, 2022
+12:30 PM</string>
+<string name="msg_jan_23_2023"> 
+Jan, 23, 2023 - Jan, 27, 2023
+</string>
+<string name="lbl_kg_1">KG 1</string>
+<string name="msg_forgot_password">Forgot Password?</string>
+<string name="msg_jjames_gmail_co">Jjames@gmail.com</string>
+<string name="lbl_report">Report</string>
+<string name="lbl_cancel">Cancel</string>
+<string name="lbl_incident">Incident</string>
+<string name="lbl_username">Username</string>
+<string name="msg_report_student2">Report Student\u2019s Behavior to Parents
+</string>
+<string name="lbl_a">A</string>
+<string name="lbl_b"> B</string>
+<string name="lbl_c">C</string>
+<string name="msg_today_jan_23">Today, Jan, 23, 2023
+You can fill a feedback report to the 
+parent
+</string>
+<string name="lbl_date">Date:</string>
+<string name="msg_chadi_bou_rjeil">Chadi Bou Rjeily</string>
+<string name="msg_name_joe_james">Name: Joe James
+Age: 11
+Father\u2019s Name: Jamie
+Mother\u2019s Name: Amy Carter
+</string>
+<string name="msg_on_jan_23_202">On Jan, 23, 2023</string>
+<string name="lbl_joe_james">Joe James</string>
+<string name="msg_tap_to_view_ins">Tap to view instructors\u2019 reports about each student</string>
+<string name="msg_today_jan_232">Today, Jan, 23, 2023
+</string>
+<string name="lbl_feedback_form">Feedback Form</string>
+<string name="msg_you_can_fill_a">You can fill a feedback report to the 
+parent
+</string>
+<string name="msg_tap_to_choose_a">Tap to choose a level and a section</string>
+<string name="lbl_date_time">Date &amp; Time</string>
+<string name="lbl_view_all">View All </string>
+<string name="msg_written_warnin">Written 
+Warning</string>
+<string name="msg_received_punish">Received Punishment</string>
+<string name="lbl_less_than_25">Less than 25%</string>
+<string name="lbl_time">Time</string>
+<string name="lbl_verbal_violence">Verbal Violence</string>
+<string name="msg_physical_violen">Physical Violence</string>
+<string name="lbl_action_taken">Action Taken:</string>
+<string name="msg_received_assist">Received Assistance</string>
+<string name="lbl_password">Password</string>
+<string name="lbl_student_name">Student Name</string>
+<string name="lbl_amy_carter">Amy Carter
+</string>
+<string name="lbl_reports">Reports</string>
+<string name="lbl_instructor">Instructor:</string>
+<string name="msg_fight_with_a_f">Fight with a 
+friend</string>
+<string name="lbl_action_taken2">Action Taken</string>
+<string name="msg_search_for_chil">      Search for Children</string>
+<string name="lbl_aggressive_act">Aggressive Act</string>
+<string name="lbl_parent2">Parent:</string>
+<string name="lbl_mila_james">Mila James</string>
+<string name="lbl_phone_number2">phone_number</string>
+<string name="msg_report_student">Report Student\u2019s Behavior to Parents
+
+</string>
+<string name="lbl_22">2</string>
+<string name="lbl_age">Age: </string>
+<string name="msg_have_harmful_ob">Have Harmful Object</string>
+<string name="lbl_total_per_day">Total per day</string>
+<string name="lbl_feedback">Feedback</string>
+<string name="lbl_email2">Email:</string>
+<string name="lbl_name_of_school">Name of School</string>
+<string name="lbl_mm_dd_yyyy">mm/dd/yyyy </string>
+<string name="lbl_children">Children</string>
+<string name="lbl_jtekli_lau_edu">JTekli@lau.edu</string>
+<string name="lbl_joe_james2">Joe James  </string>
+<string name="lbl_joe_james3">Joe James
+</string>
+<string name="lbl_11">11
+</string>
+<string name="lbl_description2">Description:</string>
+<string name="lbl_high_school">High-School</string>
+<string name="lbl_name">Name: </string>
+<string name="lbl_section_b">Section B</string>
+<string name="lbl_section_a">Section A</string>
+<string name="lbl_students">Students</string>
+<string name="lbl_name2">name</string>
+<string name="lbl_student">Student</string>
+<string name="lbl_instructor_name">Instructor Name</string>
+<string name="lbl_submit">Submit</string>
+<string name="lbl_bullied">Bullied</string>
+<string name="lbl_jamie">Jamie
+</string>
+<string name="lbl_save">Save</string>
+<string name="lbl_grades_7_9">Grades 7-9</string>
+<string name="msg_class_evaluatio2">Class Evaluation Form
+ 
+Jan, 23, 2023 - Jan, 27, 2023
+</string>
+<string name="msg_class_evaluatio3">Class Evaluation Form
+</string>
+<string name="lbl_email">Email</string>
+<string name="lbl_view_past_weeks">View Past Weeks </string>
+<string name="lbl_elementary">Elementary</string>
+<string name="lbl_2">2. </string>
+<string name="lbl_contact_parents">Contact Parents</string>
+<string name="lbl_jamie_james">Jamie James</string>
+<string name="msg_grade_6_secti">Grade 6 - Section B</string>
+<string name="msg_search_for_stud">      Search for student</string>
+<string name="lbl_supervisor">Supervisor</string>
+<string name="lbl_karl_james">Karl James</string>
+<string name="lbl_contact_parent">Contact Parent</string>
+<string name="lbl_login">Login</string>
+<string name="lbl_give_a_warning">Give a warning</string>
+<string name="lbl_view_history">View History </string>
+<string name="lbl_position">Position</string>
+<string name="msg_search_student">Search Student Name</string>
+<string name="msg_warnings_receiv">Warnings Received</string>
+<string name="lbl_father_s_name">Father\u2019s Name: </string>
+<string name="lbl_10_00_am">10:00 AM</string>
+<string name="lbl_inbox_4">Inbox - 4</string>
+<string name="msg_class_evaluatio">Class Evaluation</string>
+<string name="lbl_around_50">Around 50%</string>
+<string name="lbl_verbal_warning">Verbal
+Warning</string>
+<string name="msg_contact_supervi">Contact Supervisor</string>
+<string name="msg_please_enter_valid_phone_nu">Please enter valid phone number</string>
+<string name="msg_please_enter_valid_text">Please enter valid text</string>
+    <string name="enter_your_email_address"> Enter your email address</string>
+    <string name="enter_your_email_address_in_this_field">Enter your email address in this field</string>
+    <string name="enter_your_password"> Enter your Password</string>
+</resources>

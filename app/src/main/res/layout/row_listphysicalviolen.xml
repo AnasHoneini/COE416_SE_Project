@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listphysicalviolenRowModel" type="com.se_application.app.modules.classevaluation.data.model.ListphysicalviolenRowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnphysicalviolen"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_1">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtPhysicalViolen"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_41pxh"
+            android:layout_marginStart="@dimen/_41pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{listphysicalviolenRowModel.txtPhysicalViolen}"
+            style="@style/txtInterbold18" tools:text="@string/msg_physical_violen"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnlabel"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_41pxh"
+            android:layout_marginStart="@dimen/_41pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700_b2cornerRadius">
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:buttonTint="@color/gray_700"
+                android:ellipsize="end" android:fontFamily="@font/jost"
+                android:id="@+id/checkBoxLabel"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="wrap_content"
+                android:paddingStart="@dimen/_9pxh"
+                android:singleLine="true"
+                android:text="@string/lbl_less_than_25"
+                android:textColor="@color/gray_700"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_18pxh"
+                android:textStyle="normal" tools:text="@string/lbl_less_than_25"/>
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:buttonTint="@color/gray_700"
+                android:ellipsize="end" android:fontFamily="@font/jost"
+                android:id="@+id/checkBoxLabelOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="wrap_content"
+                android:paddingStart="@dimen/_9pxh"
+                android:singleLine="true"
+                android:text="@string/lbl_around_50"
+                android:textColor="@color/gray_700"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_18pxh"
+                android:textStyle="normal" tools:text="@string/lbl_around_50"/>
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:buttonTint="@color/gray_700"
+                android:ellipsize="end" android:fontFamily="@font/jost"
+                android:id="@+id/checkBoxLabelTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="wrap_content"
+                android:paddingStart="@dimen/_9pxh"
+                android:singleLine="true"
+                android:text="@string/lbl_more_than_75"
+                android:textColor="@color/gray_700"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_18pxh"
+                android:textStyle="normal" tools:text="@string/lbl_more_than_75"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
