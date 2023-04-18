@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # se_app
 
 Built with AndroidX Support
