@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # se_app
 
@@ -68,3 +69,6 @@ Check your app\'s UI from the AppNavigation screens of your app.
   ├── resources          - Common classes for API
   └── RetrofitService.kt
 ```
+=======
+# COE416_SE_Project
+>>>>>>> origin/main
