@@ -11,7 +11,7 @@
             android:id="@+id/linearColumnloginOne"
             style="@style/groupStylebluegray_100"
             android:layout_width="match_parent"
-            android:layout_height="480dp"
+            android:layout_height="520dp"
             android:layout_gravity="bottom|start"
             android:layout_marginTop="@dimen/_12pxv"
             android:orientation="vertical">
@@ -32,62 +32,41 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_36pxh"
-                    android:layout_marginTop="@dimen/_22pxv"
+                    android:layout_marginTop="@dimen/_1pxv"
                     android:layout_marginEnd="@dimen/_36pxh"
                     android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/txtLogin"
+
+                    <Button
+                        android:id="@+id/btnLogin"
                         style="@style/txtInterextrabold12"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="52dp"
                         android:layout_weight="0.44"
+                        android:background="@android:color/transparent"
                         android:ellipsize="end"
                         android:singleLine="true"
                         android:text="@{loginPageVM.loginPageModel.txtLogin}"
-                        tools:ignore="TextSizeCheck"
+                        tools:ignore="TextSizeCheck,DuplicateSpeakableTextCheck"
                         tools:text="@string/lbl_login" />
 
-                    <TextView
-                        android:id="@+id/txtSignup"
-                        style="@style/txtInterextrabold12_1"
-                        android:layout_width="0dp"
+                    <Button
+                        android:id="@+id/btnSignup"
+                        style="@style/txtInterextrabold12_2"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_110pxh"
-                        android:layout_weight="0.56"
+                        android:layout_marginStart="@dimen/_70pxh"
+                        android:layout_weight="0.44"
+                        android:background="@android:color/transparent"
                         android:ellipsize="end"
                         android:singleLine="true"
                         android:text="@{loginPageVM.loginPageModel.txtSignup}"
-                        android:textColor="#EF6C00"
                         tools:ignore="TextSizeCheck"
                         tools:text="@string/lbl_signup" />
+
+
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/linearRowlineone"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_36pxh"
-                    android:layout_marginTop="@dimen/_10pxv"
-                    android:layout_marginEnd="@dimen/_33pxh"
-                    android:layout_marginBottom="@dimen/_8pxv"
-                    android:orientation="horizontal">
-
-                    <View
-                        android:id="@+id/lineLineOne"
-                        android:layout_width="0dp"
-                        android:layout_height="@dimen/_1pxv"
-                        android:layout_weight="0.5"
-                        android:background="@color/deep_orange_A400" />
-
-                    <View
-                        android:id="@+id/lineLineTwo"
-                        android:layout_width="0dp"
-                        android:layout_height="@dimen/_1pxv"
-                        android:layout_marginStart="@dimen/_37pxh"
-                        android:layout_weight="0.5"
-                        android:background="@color/deep_orange_200" />
-                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -163,20 +142,22 @@
                     android:labelFor="@id/myEditText" />
 
 
-                <TextView
+                <Button
                     android:id="@+id/txtForgotPassword"
-                    style="@style/txtInterregular12_1"
+                    style="@style/txtInterregular12"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="52dp"
                     android:layout_gravity="start"
                     android:layout_marginStart="@dimen/_32pxh"
-                    android:layout_marginTop="@dimen/_30pxv"
-                    android:layout_marginEnd="@dimen/_32pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_30pxh"
                     android:layout_marginBottom="@dimen/_21pxv"
+                    android:background="@android:color/transparent"
                     android:ellipsize="end"
                     android:singleLine="true"
                     android:text="@{loginPageVM.loginPageModel.txtForgotPassword}"
                     android:textColor="#DD2C00"
+                    android:textSize="12sp"
                     tools:ignore="TextSizeCheck"
                     tools:text="@string/msg_forgot_password" />
             </LinearLayout>
@@ -193,16 +174,18 @@
                 android:layout_marginBottom="@dimen/_28pxv"
                 android:ellipsize="end"
                 android:gravity="center"
+                android:onClick="onSubmitButtonClick"
                 android:paddingStart="@dimen/_30pxh"
                 android:paddingTop="@dimen/_7pxv"
                 android:paddingEnd="@dimen/_30pxh"
                 android:paddingBottom="@dimen/_7pxv"
                 android:singleLine="true"
-                android:text="@string/lbl_login"
+                android:text="@string/submit"
                 android:textAllCaps="false"
                 android:textColor="#212121"
                 tools:ignore="TextSizeCheck,DuplicateSpeakableTextCheck"
                 tools:text="@string/lbl_login" />
+
         </LinearLayout>
 
         <ImageView
@@ -210,7 +193,7 @@
             cornerRadius="@{@dimen/_277pxh}"
             imageRes="@{@drawable/img_ellipse1}"
             android:layout_width="match_parent"
-            android:layout_height="318dp"
+            android:layout_height="338dp"
             android:layout_gravity="top|start"
             android:layout_marginBottom="@dimen/_10pxv"
             android:scaleType="fitXY"

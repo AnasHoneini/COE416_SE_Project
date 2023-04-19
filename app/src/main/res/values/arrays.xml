@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="my_list_items">
+        <item>Emma</item>
+        <item>Noah</item>
+        <item>Olivia</item>
+        <item>Liam</item>
+        <item>Ava</item>
+        <item>William</item>
+        <item>Sophia</item>
+        <item>Mason</item>
+        <item>Isabella</item>
+        <item>James</item>
+        <item>Mia</item>
+        <item>Benjamin</item>
+        <item>Charlotte</item>
+        <item>Logan</item>
+        <item>Amelia</item>
+        <item>Ethan</item>
+        <item>Harper</item>
+        <item>Lucas</item>
+        <item>Evelyn</item>
+        <item>Henry</item>
+    </string-array>
+</resources>

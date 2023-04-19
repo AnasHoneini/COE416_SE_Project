@@ -172,4 +172,11 @@ Warning</string>
     <string name="enter_your_email_address"> Enter your email address</string>
     <string name="enter_your_email_address_in_this_field">Enter your email address in this field</string>
     <string name="enter_your_password"> Enter your Password</string>
+    <string name="submit">Submit</string>
+    <string name="enter_your_username"> Enter your Username</string>
+    <string name="enter_the_name_of_the_school"> Enter the Name of the School</string>
+    <string name="name_of_children"> Enter Chlidren </string>
+    <string name="supervisor">Supervisor</string>
+    <string name="parent">Parent</string>
+    <string name="se_app">se_app</string>
 </resources>

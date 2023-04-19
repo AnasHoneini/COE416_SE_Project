@@ -25,7 +25,7 @@ class LoginPageActivity : BaseActivity<ActivityLoginPageBinding>(R.layout.activi
     }
 
     override fun setUpClicks(): Unit {
-      binding.txtSignup.setOnClickListener {
+      binding.btnSignup.setOnClickListener {
         val destIntent = SignupPageActivity.getIntent(this, null)
         startActivity(destIntent)
       }

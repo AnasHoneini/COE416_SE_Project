@@ -12,7 +12,7 @@
             android:name="com.se_application.app.modules.gradesectionkg.ui.GradeSectionkgActivity" android:screenOrientation="portrait"/>
         <activity
             android:name="com.se_application.app.modules.parentviewone.ui.ParentViewOneActivity" android:screenOrientation="portrait"/>
-        <activity android:exported="true"
+        <activity android:exported="true" android:label="@string/se_app"
             android:name="com.se_application.app.modules.loginpage.ui.LoginPageActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -43,7 +43,7 @@
             android:name="com.se_application.app.modules.parentviewtwo.ui.ParentViewTwoActivity" android:screenOrientation="portrait"/>
         <activity
             android:name="com.se_application.app.modules.dashboard.ui.DashboardActivity" android:screenOrientation="portrait"/>
-        <activity
+        <activity android:label="@string/se_app"
             android:name="com.se_application.app.modules.signuppage.ui.SignupPageActivity" android:screenOrientation="portrait"/>
         <activity
             android:name="com.se_application.app.modules.studentfeedback.ui.StudentFeedbackActivity" android:screenOrientation="portrait"/>
