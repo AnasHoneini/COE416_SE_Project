@@ -3,87 +3,118 @@
     <data>
         <variable name="gradeSectionkgVM" type="com.se_application.app.modules.gradesectionkg.data.viewmodel.GradeSectionkgVM"/>
     </data>
-    <LinearLayout android:gravity="center_horizontal"
+    <LinearLayout
+        android:gravity="center_horizontal"
         android:id="@+id/linearGradeSectionKG"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:orientation="vertical" style="@style/groupStylewhite_A700">
-        <FrameLayout android:gravity="start"
+        android:orientation="vertical"
+        style="@style/groupStylewhite_A700">
+
+        <FrameLayout
+            android:layout_gravity="top|start"
             android:id="@+id/frameStackrectanglefive"
-            android:layout_height="@dimen/_152pxv" android:layout_width="match_parent">
+            android:layout_height="@dimen/_152pxv"
+            android:layout_width="match_parent">
+
             <ImageView android:id="@+id/imageRectangleFive"
                 android:layout_gravity="start"
-                android:layout_height="@dimen/_152pxh"
+                android:layout_height="@dimen/_120pxh"
                 android:layout_width="match_parent"
                 android:scaleType="fitXY"
-                imageRes="@{@drawable/img_rectangle5_1}"
-                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle5_1"/>
+                imageRes="@{@drawable/img_rectangle5_152x360}"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_rectangle5_152x360"/>
+
+
             <LinearLayout android:id="@+id/linearRowarrowleft"
                 android:layout_gravity="start"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:orientation="horizontal" style="@style/groupStyledeep_orange_A400_d6">
-                <ImageView android:id="@+id/imageArrowleft"
+                android:orientation="horizontal"
+                style="@style/groupStyledeep_orange_A400_d6">
+
+                <ImageView
+                    android:id="@+id/imageArrowleft"
+                    android:layout_width="@dimen/_24pxh"
                     android:layout_height="@dimen/_16pxh"
-                    android:layout_marginBottom="@dimen/_111pxv"
                     android:layout_marginStart="@dimen/_13pxh"
                     android:layout_marginTop="@dimen/_25pxv"
-                    android:layout_width="@dimen/_24pxh"
+                    android:layout_marginBottom="@dimen/_111pxv"
                     android:scaleType="fitXY"
                     android:src="@drawable/img_arrowleft"
-                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
-                <FrameLayout android:id="@+id/frameStackellipsetwo"
-                    android:layout_height="@dimen/_89pxv"
-                    android:layout_marginBottom="@dimen/_63pxv"
-                    android:layout_marginStart="@dimen/_120pxh" android:layout_width="@dimen/_202pxh">
-                    <ImageView android:id="@+id/imageEllipseTwo"
-                        android:layout_gravity="start"
-                        android:layout_height="@dimen/_89pxh"
+                    tools:ignore="ContentDescription" />
+
+                <FrameLayout
+                    android:id="@+id/frameStackellipsetwo"
+                    android:layout_width="@dimen/_202pxh"
+                    android:layout_height="91dp"
+                    android:layout_marginStart="@dimen/_120pxh"
+                    android:layout_marginBottom="@dimen/_63pxv">
+
+                    <ImageView
+                        android:id="@+id/imageEllipseTwo"
+                        imageRes="@{@drawable/img_ellipse2_89x202}"
                         android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
                         android:scaleType="fitXY"
-                        imageRes="@{@drawable/img_ellipse2_1}"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse2_1"/>
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_ellipse2_89x202" />
+
                     <LinearLayout
                         android:id="@+id/linearColumnwelcomeuser"
-                        android:layout_gravity="bottom|end"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/_14pxv"
-                        android:layout_marginEnd="@dimen/_6pxh"
+                        android:layout_gravity="bottom|end"
                         android:layout_marginStart="@dimen/_10pxh"
                         android:layout_marginTop="@dimen/_14pxv"
-                        android:layout_width="match_parent" android:orientation="vertical">
-                        <TextView android:ellipsize="end"
-                            android:gravity="start"
+                        android:layout_marginEnd="@dimen/_6pxh"
+                        android:layout_marginBottom="@dimen/_14pxv"
+                        android:orientation="vertical">
+
+                        <TextView
                             android:id="@+id/txtWelcomeuser"
+                            style="@style/txtInterregular18"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="@dimen/_10pxh"
-                            android:layout_width="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="start"
                             android:lineSpacingExtra="@dimen/_4pxh"
                             android:singleLine="true"
                             android:text="@{gradeSectionkgVM.gradeSectionkgModel.txtWelcomeuser}"
-                            style="@style/txtInterregular18" tools:text="@string/lbl_welcome_user"/>
-                        <TextView android:ellipsize="end"
-                            android:gravity="end"
+                            tools:ignore="TextSizeCheck"
+                            tools:text="@string/lbl_welcome_user" />
+
+                        <TextView
                             android:id="@+id/txtDate2312023"
+                            style="@style/txtInterregular18"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_10pxh"
                             android:layout_marginTop="@dimen/_9pxv"
-                            android:layout_width="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="end"
                             android:lineSpacingExtra="@dimen/_4pxh"
                             android:singleLine="true"
                             android:text="@{gradeSectionkgVM.gradeSectionkgModel.txtDate2312023}"
-                            style="@style/txtInterregular18" tools:text="@string/lbl_date_23_1_2023"/>
+                            tools:ignore="TextSizeCheck"
+                            tools:text="@string/lbl_date_23_1_2023" />
                     </LinearLayout>
                 </FrameLayout>
             </LinearLayout>
         </FrameLayout>
-        <LinearLayout android:gravity="center_vertical"
+        <LinearLayout
+            android:gravity="center_vertical"
             android:id="@+id/linearRowsearch"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_39pxh"
             android:layout_marginStart="@dimen/_39pxh"
+            android:layout_marginTop="@dimen/_2pxh"
             android:layout_width="match_parent"
-            android:orientation="horizontal" style="@style/groupStylebluegray_100cornerRadius">
+            android:orientation="horizontal"
+            style="@style/groupStylebluegray_100cornerRadius">
             <ImageView android:id="@+id/imageSearch"
                 android:layout_height="@dimen/_18pxh"
                 android:layout_marginBottom="@dimen/_8pxv"
@@ -93,88 +124,89 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/img_search"
                 tools:ignore="ContentDescription" tools:src="@drawable/img_search"/>
-            <TextView android:ellipsize="end"
-                android:id="@+id/txtLanguage"
+
+            <EditText
+                android:id="@id/searchStudents"
+                style="@style/txtInterregular15"
+                android:layout_width="169dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_7pxv"
-                android:layout_marginEnd="@dimen/_74pxh"
                 android:layout_marginStart="@dimen/_26pxh"
                 android:layout_marginTop="@dimen/_11pxv"
-                android:layout_weight="0.89" android:layout_width="0dp"
+                android:layout_marginEnd="@dimen/_74pxh"
+                android:layout_marginBottom="@dimen/_7pxv"
+                android:autofillHints=""
+                android:ellipsize="end"
+                android:inputType="textShortMessage"
                 android:lineSpacingExtra="@dimen/_4pxh"
+                android:minHeight="48dp"
                 android:singleLine="true"
                 android:text="@{gradeSectionkgVM.gradeSectionkgModel.txtLanguage}"
-                style="@style/txtInterregular15" tools:text="@string/msg_search_for_stud"/>
+                tools:ignore="LabelFor,TextSizeCheck"
+                tools:text="@string/msg_search_for_stud" />
         </LinearLayout>
-        <TextView android:ellipsize="end"
-            android:gravity="center_horizontal"
+
+        <TextView
             android:id="@+id/txtTaptochoosea"
+            style="@style/txtInterbold14"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_39pxh"
             android:layout_marginStart="@dimen/_39pxh"
             android:layout_marginTop="@dimen/_16pxv"
-            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/_39pxh"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
             android:singleLine="true"
             android:text="@{gradeSectionkgVM.gradeSectionkgModel.txtTaptochoosea}"
-            style="@style/txtInterbold14" tools:text="@string/msg_tap_to_choose_a"/>
-        <LinearLayout android:gravity="center_vertical"
-            android:id="@+id/linearRowgradessixteen"
-            android:layout_height="wrap_content"
+            tools:ignore="TextSizeCheck"
+            tools:text="@string/msg_tap_to_choose_a" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/linearRowGradesSixAndBelow"
+            style="@style/btnSolidRounded_2"
+            android:layout_height="48dp"
             android:layout_marginEnd="@dimen/_39pxh"
             android:layout_marginStart="@dimen/_39pxh"
-            android:layout_marginTop="@dimen/_120pxv"
+            android:layout_marginTop="@dimen/_90pxv"
             android:layout_width="match_parent"
-            android:orientation="horizontal" style="@style/groupStyledeep_orange_201cornerRadius">
-            <TextView android:ellipsize="end"
-                android:id="@+id/txtGradesSixteen"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_16pxv"
-                android:layout_marginStart="@dimen/_83pxh"
-                android:layout_marginTop="@dimen/_19pxv"
-                android:layout_weight="0.8" android:layout_width="0dp"
-                android:singleLine="true"
-                android:text="@{gradeSectionkgVM.gradeSectionkgModel.txtGradesSixteen}"
-                style="@style/txtIntersemibold20" tools:text="@string/lbl_grades_1_6"/>
-            <ImageView android:id="@+id/imagePolygonFour"
-                android:layout_height="@dimen/_24pxh"
-                android:layout_marginBottom="@dimen/_17pxv"
-                android:layout_marginEnd="@dimen/_28pxh"
-                android:layout_marginStart="@dimen/_25pxh"
-                android:layout_marginTop="@dimen/_20pxv"
-                android:layout_width="@dimen/_26pxh"
-                android:scaleType="fitXY"
-                android:src="@drawable/img_polygon3"
-                tools:ignore="ContentDescription" tools:src="@drawable/img_polygon3"/>
-        </LinearLayout>
-        <LinearLayout android:gravity="center_vertical"
-            android:id="@+id/linearRowgradesseventynine"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_228pxv"
-            android:layout_marginEnd="@dimen/_39pxh"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@{gradeSectionkgVM.gradeSectionkgModel.txtGradesSixteen}"
+            android:textSize="@dimen/_18pxh"
+            tools:ignore="SpUsage,TextSizeCheck"
+            tools:text="@string/lbl_grades_1_6"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/LinearRowGradesSevenNine"
+            style="@style/btnSolidRounded_2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
             android:layout_marginStart="@dimen/_39pxh"
-            android:layout_marginTop="@dimen/_109pxv"
+            android:layout_marginTop="@dimen/_90pxv"
+            android:layout_marginEnd="@dimen/_39pxh"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textSize="@dimen/_18pxh"
+
+            android:singleLine="true"
+            android:text="@{gradeSectionkgVM.gradeSectionkgModel.txtGradesSeventyNine}"
+            tools:ignore="TextSizeCheck"
+            tools:text="@string/lbl_grades_7_9" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/LinearRowGradesTenTweleve"
+            style="@style/btnSolidRounded_2"
             android:layout_width="match_parent"
-            android:orientation="horizontal" style="@style/groupStyledeep_orange_201cornerRadius">
-            <TextView android:ellipsize="end"
-                android:id="@+id/txtGradesSeventyNine"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_16pxv"
-                android:layout_marginStart="@dimen/_86pxh"
-                android:layout_marginTop="@dimen/_19pxv"
-                android:layout_weight="0.81" android:layout_width="0dp"
-                android:singleLine="true"
-                android:text="@{gradeSectionkgVM.gradeSectionkgModel.txtGradesSeventyNine}"
-                style="@style/txtIntersemibold20" tools:text="@string/lbl_grades_7_9"/>
-            <ImageView android:id="@+id/imagePolygonFive"
-                android:layout_height="@dimen/_24pxh"
-                android:layout_marginBottom="@dimen/_17pxv"
-                android:layout_marginEnd="@dimen/_28pxh"
-                android:layout_marginStart="@dimen/_19pxh"
-                android:layout_marginTop="@dimen/_20pxv"
-                android:layout_width="@dimen/_26pxh"
-                android:scaleType="fitXY"
-                android:src="@drawable/img_polygon3"
-                tools:ignore="ContentDescription" tools:src="@drawable/img_polygon3"/>
-        </LinearLayout>
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/_39pxh"
+            android:layout_marginTop="@dimen/_90pxv"
+            android:layout_marginEnd="@dimen/_39pxh"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/_18pxh"
+            android:text="@{gradeSectionkgVM.gradeSectionkgModel.txtGradesSeventyNine}"
+            tools:ignore="TextSizeCheck"
+            tools:text="Grades 10-12" />
     </LinearLayout>
 </layout>

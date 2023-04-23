@@ -5,7 +5,10 @@
     </data>
     <FrameLayout android:id="@+id/frameSignupPage"
         android:layout_height="match_parent"
-        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        android:layout_width="match_parent"
+        style="@style/groupStylewhite_A700"
+        android:onClick="onClick"
+        tools:context=".MainActivity">
 
         <LinearLayout
             android:id="@+id/linearColumnsignup"
@@ -230,7 +233,7 @@
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnSignup"
+                android:id="@+id/btnSignupDone"
                 style="@style/btnSolidRounded"
                 android:layout_width="@dimen/_111pxh"
                 android:layout_height="48dp"
@@ -287,8 +290,8 @@
                 android:layout_marginEnd="@dimen/_36pxh"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/btnLogin2"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnLoginPage"
                     style="@style/txtInterextrabold12_2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -300,8 +303,8 @@
                     tools:ignore="TextSizeCheck,TextSizeCheck"
                     tools:text="@string/lbl_login" />
 
-                <Button
-                    android:id="@+id/btnSignup2"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSignupPage"
                     style="@style/txtInterextrabold12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

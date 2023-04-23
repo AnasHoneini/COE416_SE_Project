@@ -5,7 +5,9 @@
     </data>
     <FrameLayout android:id="@+id/frameLoginPage"
         android:layout_height="match_parent"
-        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        android:layout_width="match_parent"
+        style="@style/groupStylewhite_A700"
+        tools:context=".MainActivity">
 
         <LinearLayout
             android:id="@+id/linearColumnloginOne"
@@ -38,7 +40,7 @@
 
 
                     <Button
-                        android:id="@+id/btnLogin"
+                        android:id="@id/btnLoginPage"
                         style="@style/txtInterextrabold12"
                         android:layout_width="wrap_content"
                         android:layout_height="52dp"
@@ -51,7 +53,7 @@
                         tools:text="@string/lbl_login" />
 
                     <Button
-                        android:id="@+id/btnSignup"
+                        android:id="@id/btnSignupPage"
                         style="@style/txtInterextrabold12_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -139,10 +141,11 @@
                     android:background="@color/gray_401"
                     android:hint="@string/enter_your_password"
                     android:inputType="textPassword"
+                    android:imeOptions="actionDone"
                     android:labelFor="@id/myEditText" />
 
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/txtForgotPassword"
                     style="@style/txtInterregular12"
                     android:layout_width="wrap_content"
@@ -157,13 +160,14 @@
                     android:singleLine="true"
                     android:text="@{loginPageVM.loginPageModel.txtForgotPassword}"
                     android:textColor="#DD2C00"
-                    android:textSize="12sp"
+                    android:textSize="15sp"
                     tools:ignore="TextSizeCheck"
+                    android:textAllCaps="false"
                     tools:text="@string/msg_forgot_password" />
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnLoginOne"
+                android:id="@+id/btnLoginDone"
                 style="@style/btnSolidRounded"
                 android:layout_width="@dimen/_111pxh"
                 android:layout_height="48dp"
