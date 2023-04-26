@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="studentDetailVM" type="com.se_application.app.modules.studentdetail.data.viewmodel.StudentDetailVM"/>
-    </data>
+
     <FrameLayout android:id="@+id/frameStudentDetail"
         android:layout_height="match_parent"
         android:layout_width="match_parent" style="@style/groupStylewhite_A700">
@@ -41,7 +39,6 @@
                         android:layout_width="0dp"
                         android:lineSpacingExtra="@dimen/_4pxh"
                         android:singleLine="true"
-                        android:text="@{studentDetailVM.studentDetailModel.txtGrade6Secti}"
                         style="@style/txtInterextrabold18_1" tools:text="@string/msg_grade_6_secti"/>
                     <ImageView android:id="@+id/imageMaximize"
                         android:layout_height="@dimen/_19pxh"
@@ -64,8 +61,7 @@
                 <ImageView android:id="@+id/imageEllipseFive"
                     android:layout_height="@dimen/_128pxh"
                     android:layout_width="@dimen/_129pxh"
-                    android:scaleType="centerCrop" circular="@{true}"
-                    imageRes="@{@drawable/img_ellipse5}"
+                    android:scaleType="centerCrop"
                     tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse5"/>
                 <TextView android:id="@+id/txtDescription"
                     android:layout_height="wrap_content"
@@ -75,7 +71,6 @@
                     android:layout_weight="0.62"
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_7pxh"
-                    android:text="@{studentDetailVM.studentDetailModel.txtDescription}"
                     style="@style/txtInterextrabold18_1" tools:text="@string/msg_name_joe_james"/>
             </LinearLayout>
         </LinearLayout>
@@ -100,7 +95,6 @@
                 android:layout_marginTop="@dimen/_20pxv"
                 android:layout_width="match_parent"
                 android:lineSpacingExtra="@dimen/_7pxh"
-                android:text="@{studentDetailVM.studentDetailModel.txtDescriptionOne}"
                 style="@style/txtInterextrabold18_2"
                 textUnderline="true" tools:text="@string/msg_today_jan_23"/>
             <LinearLayout android:id="@+id/linearColumnincident"
@@ -123,7 +117,6 @@
                         android:layout_weight="0.62"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{studentDetailVM.studentDetailModel.txtIncident}"
                         style="@style/txtIntersemibold16" tools:text="@string/lbl_incident"/>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtTime"
@@ -132,7 +125,6 @@
                         android:layout_weight="0.38"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{studentDetailVM.studentDetailModel.txtTime}"
                         style="@style/txtIntersemibold16" tools:text="@string/lbl_time"/>
                 </LinearLayout>
                 <View android:background="@color/gray_600"
@@ -155,7 +147,6 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="0.55"
                             android:layout_width="0dp"
-                            android:text="@{studentDetailVM.studentDetailModel.txtFightwithafr}"
                             style="@style/txtInterregular16" tools:text="@string/msg_fight_with_a_fr"/>
                         <TextView android:ellipsize="end"
                             android:id="@+id/txtTimeOne"
@@ -166,7 +157,6 @@
                             android:layout_weight="0.45"
                             android:layout_width="0dp"
                             android:singleLine="true"
-                            android:text="@{studentDetailVM.studentDetailModel.txtTimeOne}"
                             style="@style/txtInterregular16" tools:text="@string/lbl_10_00_am"/>
                     </LinearLayout>
                     <LinearLayout android:id="@+id/linearRowfeedback"
@@ -182,7 +172,6 @@
                             android:layout_weight="0.92"
                             android:layout_width="0dp"
                             android:singleLine="true"
-                            android:text="@{studentDetailVM.studentDetailModel.txtFeedback}"
                             style="@style/txtInterbold14"
                             textUnderline="true" tools:text="@string/lbl_feedback"/>
                         <ImageView android:id="@+id/imageArrowright"
@@ -212,7 +201,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.38"
                         android:layout_width="0dp"
-                        android:text="@{studentDetailVM.studentDetailModel.txtFightwithafrOne}"
                         style="@style/txtInterregular16" tools:text="@string/msg_fight_with_a_fr"/>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtTimeTwo"
@@ -223,7 +211,6 @@
                         android:layout_weight="0.3"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{studentDetailVM.studentDetailModel.txtTimeTwo}"
                         style="@style/txtInterregular16" tools:text="@string/lbl_12_30_pm"/>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtFeedbackOne"
@@ -234,7 +221,6 @@
                         android:layout_weight="0.29"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{studentDetailVM.studentDetailModel.txtFeedbackOne}"
                         style="@style/txtInterbold14"
                         textUnderline="true" tools:text="@string/lbl_feedback"/>
                     <ImageView android:id="@+id/imageArrowrightOne"
@@ -267,7 +253,6 @@
                         android:layout_weight="0.91"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{studentDetailVM.studentDetailModel.txtTotalperday}"
                         style="@style/txtInterbold16_1" tools:text="@string/lbl_total_per_day"/>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtTwo"
@@ -277,7 +262,6 @@
                         android:layout_weight="0.09"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{studentDetailVM.studentDetailModel.txtTwo}"
                         style="@style/txtInterbold16_1" tools:text="@string/lbl_22"/>
                 </LinearLayout>
             </LinearLayout>
@@ -305,7 +289,6 @@
                     android:layout_marginTop="@dimen/_6pxv"
                     android:layout_weight="0.31"
                     android:layout_width="0dp" android:singleLine="true"
-                    android:text="@{studentDetailVM.studentDetailModel.txtLanguage}"
                     style="@style/txtInterbold14" textUnderline="true" tools:text="@string/lbl_view_history"/>
                 <LinearLayout android:id="@+id/linearRowcontactparent"
                     android:layout_height="wrap_content"
@@ -322,7 +305,6 @@
                         android:layout_weight="0.82"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{studentDetailVM.studentDetailModel.txtContactParent}"
                         style="@style/txtInterbold14_2"
                         textUnderline="true" tools:text="@string/lbl_contact_parent"/>
                     <ImageView android:id="@+id/imageArrowrightTwo"

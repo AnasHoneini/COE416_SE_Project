@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="studentFeedbackOneVM" type="com.se_application.app.modules.studentfeedbackone.data.viewmodel.StudentFeedbackOneVM"/>
-    </data>
+
     <FrameLayout android:id="@+id/frameStudentFeedbac"
         android:layout_height="match_parent"
         android:layout_width="match_parent" style="@style/groupStylewhite_A700">
@@ -36,7 +34,6 @@
                     android:layout_width="match_parent"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{studentFeedbackOneVM.studentFeedbackOneModel.txtGrade6Secti}"
                     style="@style/txtInterextrabold18_1" tools:text="@string/msg_grade_6_secti"/>
                 <ImageView android:id="@+id/imageEllipseFive"
                     android:layout_gravity="center_horizontal"
@@ -45,8 +42,7 @@
                     android:layout_marginStart="@dimen/_38pxh"
                     android:layout_marginTop="@dimen/_11pxv"
                     android:layout_width="@dimen/_95pxh"
-                    android:scaleType="centerCrop" circular="@{true}"
-                    imageRes="@{@drawable/img_ellipse5}"
+                    android:scaleType="centerCrop"
                     tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse5"/>
                 <TextView android:ellipsize="end"
                     android:gravity="center_horizontal"
@@ -58,7 +54,6 @@
                     android:layout_width="match_parent"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{studentFeedbackOneVM.studentFeedbackOneModel.txtJoeJames}"
                     style="@style/txtInterextrabold18_1" tools:text="@string/lbl_joe_james"/>
             </LinearLayout>
             <ImageView android:id="@+id/imageMaximize"
@@ -86,7 +81,6 @@
                 android:layout_marginStart="@dimen/_41pxh"
                 android:layout_marginTop="@dimen/_16pxv"
                 android:layout_width="match_parent"
-                android:text="@{studentFeedbackOneVM.studentFeedbackOneModel.txtReportStudent}"
                 style="@style/txtInterbold20" tools:text="@string/msg_report_student"/>
             <LinearLayout android:gravity="start"
                 android:id="@+id/linearColumndate"
@@ -109,7 +103,6 @@
                         android:layout_width="0dp"
                         android:lineSpacingExtra="@dimen/_4pxh"
                         android:singleLine="true"
-                        android:text="@{studentFeedbackOneVM.studentFeedbackOneModel.txtDate}"
                         style="@style/txtInterextrabold15" tools:text="@string/lbl_date"/>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txt4232023"
@@ -121,7 +114,6 @@
                         android:layout_width="0dp"
                         android:lineSpacingExtra="@dimen/_3pxh"
                         android:singleLine="true"
-                        android:text="@{studentFeedbackOneVM.studentFeedbackOneModel.txt4232023}"
                         style="@style/txtInterbold14"
                         textUnderline="true" tools:text="@string/lbl_4_23_2023"/>
                 </LinearLayout>
@@ -141,7 +133,6 @@
                         android:layout_width="0dp"
                         android:lineSpacingExtra="@dimen/_4pxh"
                         android:singleLine="true"
-                        android:text="@{studentFeedbackOneVM.studentFeedbackOneModel.txtInstructor}"
                         style="@style/txtInterextrabold17" tools:text="@string/lbl_instructor"/>
                     <androidx.appcompat.widget.AppCompatButton
                         android:ellipsize="end" android:gravity="center"
@@ -168,7 +159,6 @@
                     android:layout_width="wrap_content"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{studentFeedbackOneVM.studentFeedbackOneModel.txtDescription}"
                     style="@style/txtInterextrabold17" tools:text="@string/lbl_description2"/>
                 <View android:background="@color/white_A700"
                     android:id="@+id/viewRectangleTwentyTwo"
@@ -192,7 +182,6 @@
                         android:layout_width="0dp"
                         android:lineSpacingExtra="@dimen/_4pxh"
                         android:singleLine="true"
-                        android:text="@{studentFeedbackOneVM.studentFeedbackOneModel.txtActionTaken}"
                         style="@style/txtInterextrabold17" tools:text="@string/lbl_action_taken"/>
                     <LinearLayout
                         android:id="@+id/linearRowgiveawarning"
@@ -210,7 +199,6 @@
                             android:layout_weight="0.92"
                             android:layout_width="0dp"
                             android:singleLine="true"
-                            android:text="@{studentFeedbackOneVM.studentFeedbackOneModel.txtGiveawarning}"
                             style="@style/txtIntersemibold14_1" tools:text="@string/lbl_give_a_warning"/>
                         <ImageView android:id="@+id/imageArrowup"
                             android:layout_height="@dimen/_5pxh"
@@ -241,7 +229,6 @@
                         android:layout_width="0dp"
                         android:lineSpacingExtra="@dimen/_4pxh"
                         android:singleLine="true"
-                        android:text="@{studentFeedbackOneVM.studentFeedbackOneModel.txtStudentsCase}"
                         style="@style/txtInterextrabold17" tools:text="@string/lbl_student_s_case"/>
                     <LinearLayout android:gravity="start"
                         android:id="@+id/linearColumnlabel"

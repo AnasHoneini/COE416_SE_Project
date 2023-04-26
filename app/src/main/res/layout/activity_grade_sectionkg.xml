@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="gradeSectionkgVM" type="com.se_application.app.modules.gradesectionkg.data.viewmodel.GradeSectionkgVM"/>
-    </data>
+
     <LinearLayout
         android:gravity="center_horizontal"
         android:id="@+id/linearGradeSectionKG"
@@ -22,7 +20,6 @@
                 android:layout_height="@dimen/_120pxh"
                 android:layout_width="match_parent"
                 android:scaleType="fitXY"
-                imageRes="@{@drawable/img_rectangle5_152x360}"
                 tools:ignore="ContentDescription"
                 tools:src="@drawable/img_rectangle5_152x360"/>
 
@@ -54,7 +51,6 @@
 
                     <ImageView
                         android:id="@+id/imageEllipseTwo"
-                        imageRes="@{@drawable/img_ellipse2_89x202}"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="start"
@@ -83,7 +79,6 @@
                             android:gravity="start"
                             android:lineSpacingExtra="@dimen/_4pxh"
                             android:singleLine="true"
-                            android:text="@{gradeSectionkgVM.gradeSectionkgModel.txtWelcomeuser}"
                             tools:ignore="TextSizeCheck"
                             tools:text="@string/lbl_welcome_user" />
 
@@ -98,7 +93,6 @@
                             android:gravity="end"
                             android:lineSpacingExtra="@dimen/_4pxh"
                             android:singleLine="true"
-                            android:text="@{gradeSectionkgVM.gradeSectionkgModel.txtDate2312023}"
                             tools:ignore="TextSizeCheck"
                             tools:text="@string/lbl_date_23_1_2023" />
                     </LinearLayout>
@@ -140,7 +134,6 @@
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:minHeight="48dp"
                 android:singleLine="true"
-                android:text="@{gradeSectionkgVM.gradeSectionkgModel.txtLanguage}"
                 tools:ignore="LabelFor,TextSizeCheck"
                 tools:text="@string/msg_search_for_stud" />
         </LinearLayout>
@@ -156,7 +149,6 @@
             android:ellipsize="end"
             android:gravity="center_horizontal"
             android:singleLine="true"
-            android:text="@{gradeSectionkgVM.gradeSectionkgModel.txtTaptochoosea}"
             tools:ignore="TextSizeCheck"
             tools:text="@string/msg_tap_to_choose_a" />
 
@@ -171,7 +163,6 @@
             android:gravity="center"
             android:ellipsize="end"
             android:singleLine="true"
-            android:text="@{gradeSectionkgVM.gradeSectionkgModel.txtGradesSixteen}"
             android:textSize="@dimen/_18pxh"
             tools:ignore="SpUsage,TextSizeCheck"
             tools:text="@string/lbl_grades_1_6"/>
@@ -189,7 +180,6 @@
             android:textSize="@dimen/_18pxh"
 
             android:singleLine="true"
-            android:text="@{gradeSectionkgVM.gradeSectionkgModel.txtGradesSeventyNine}"
             tools:ignore="TextSizeCheck"
             tools:text="@string/lbl_grades_7_9" />
 
@@ -205,7 +195,6 @@
             android:gravity="center"
             android:singleLine="true"
             android:textSize="@dimen/_18pxh"
-            android:text="@{gradeSectionkgVM.gradeSectionkgModel.txtGradesSeventyNine}"
             tools:ignore="TextSizeCheck"
             tools:text="Grades 10-12" />
     </LinearLayout>

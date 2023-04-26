@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="dashboardVM" type="com.se_application.app.modules.dashboard.data.viewmodel.DashboardVM"/>
-    </data>
+
     <FrameLayout android:id="@+id/frameDashboard"
         android:layout_height="match_parent"
         android:layout_width="match_parent" style="@style/groupStylewhite_A700">
@@ -49,7 +47,6 @@
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:minHeight="48dp"
                     android:singleLine="true"
-                    android:text="@{dashboardVM.dashboardModel.txtLanguage}"
                     tools:ignore="TextSizeCheck" />
             </LinearLayout>
             <FrameLayout android:id="@+id/frameStackarrowright"
@@ -78,7 +75,6 @@
                         android:ellipsize="end"
                         android:lineSpacingExtra="@dimen/_4pxh"
                         android:singleLine="true"
-                        android:text="@{dashboardVM.dashboardModel.txtKindergarten}"
                         android:textAllCaps="false"
                         android:textSize="@dimen/_17pxh"
                         tools:ignore="SpUsage,TextSizeCheck"
@@ -122,7 +118,6 @@
                         android:ellipsize="end"
                         android:lineSpacingExtra="@dimen/_4pxh"
                         android:singleLine="true"
-                        android:text="@{dashboardVM.dashboardModel.txtElementary}"
                         android:textAllCaps="false"
                         android:textSize="@dimen/_17pxh"
                         tools:ignore="SpUsage,TextSizeCheck"
@@ -165,7 +160,6 @@
                     android:ellipsize="end"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{dashboardVM.dashboardModel.txtHighSchool}"
                     android:textAllCaps="false"
                     android:textSize="@dimen/_17pxh"
                     tools:ignore="SpUsage,TextSizeCheck"
@@ -198,7 +192,6 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerDashboard"
-                itemSpace="@{@dimen/_21pxh}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_16pxh"
@@ -241,7 +234,6 @@
                             android:gravity="center"
                             android:onClick="onSubmitButtonClick"
                             android:singleLine="true"
-                            android:text="@{dashboardVM.dashboardModel.txtLanguageTwo}"
                             android:textAllCaps="false"
                             android:textColor="#212121"
                             tools:ignore="TextSizeCheck"
@@ -257,7 +249,6 @@
 
             <ImageView
                 android:id="@+id/imageRectangleFive"
-                imageRes="@{@drawable/img_rectangle5}"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_236pxh"
                 android:layout_gravity="start"
@@ -289,14 +280,13 @@
                         tools:src="@drawable/img_menu" />
 
                     <FrameLayout android:id="@+id/frameStackellipsetwo"
-                        android:layout_height="@dimen/_89pxv"
+                        android:layout_height="@dimen/_95pxv"
                         android:layout_marginStart="@dimen/_110pxh" android:layout_width="@dimen/_202pxh">
                         <ImageView android:id="@+id/imageEllipseTwo"
                             android:layout_gravity="start"
                             android:layout_height="@dimen/_89pxh"
                             android:layout_width="match_parent"
                             android:scaleType="fitXY"
-                            imageRes="@{@drawable/img_ellipse2}"
                             tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse2"/>
                         <LinearLayout
                             android:id="@+id/linearColumnwelcomeuser"
@@ -318,7 +308,6 @@
                                 android:gravity="start"
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
-                                android:text="@{dashboardVM.dashboardModel.txtWelcomeuser}"
                                 tools:ignore="TextSizeCheck"
                                 tools:text="@string/lbl_welcome_user" />
 
@@ -326,14 +315,13 @@
                                 android:id="@+id/txtDate2312023"
                                 style="@style/txtInterregular18"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="30dp"
                                 android:layout_marginStart="@dimen/_10pxh"
                                 android:layout_marginTop="@dimen/_9pxv"
                                 android:ellipsize="end"
                                 android:gravity="end"
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
-                                android:text="@{dashboardVM.dashboardModel.txtDate2312023}"
                                 tools:ignore="TextSizeCheck"
                                 tools:text="@string/lbl_date_23_1_2023" />
                         </LinearLayout>

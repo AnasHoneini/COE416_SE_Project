@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="studentFeedbackVM" type="com.se_application.app.modules.studentfeedback.data.viewmodel.StudentFeedbackVM"/>
-    </data>
+
     <FrameLayout android:id="@+id/frameStackarrowleft"
         android:layout_height="match_parent"
         android:layout_width="match_parent" style="@style/groupStylewhite_A700">
@@ -41,7 +39,6 @@
                         android:layout_width="match_parent"
                         android:lineSpacingExtra="@dimen/_4pxh"
                         android:singleLine="true"
-                        android:text="@{studentFeedbackVM.studentFeedbackModel.txtGrade6Secti}"
                         style="@style/txtInterextrabold18_1" tools:text="@string/msg_grade_6_secti"/>
                     <ImageView android:id="@+id/imageEllipseFive"
                         android:layout_gravity="center_horizontal"
@@ -51,8 +48,6 @@
                         android:layout_marginTop="@dimen/_11pxv"
                         android:layout_width="@dimen/_95pxh"
                         android:scaleType="centerCrop"
-                        circular="@{true}"
-                        imageRes="@{@drawable/img_ellipse5}"
                         tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse5"/>
                     <TextView android:ellipsize="end"
                         android:gravity="center_horizontal"
@@ -64,7 +59,6 @@
                         android:layout_width="match_parent"
                         android:lineSpacingExtra="@dimen/_4pxh"
                         android:singleLine="true"
-                        android:text="@{studentFeedbackVM.studentFeedbackModel.txtJoeJames}"
                         style="@style/txtInterextrabold18_1" tools:text="@string/lbl_joe_james"/>
                 </LinearLayout>
             </LinearLayout>
@@ -82,7 +76,6 @@
                     android:layout_marginStart="@dimen/_25pxh"
                     android:layout_marginTop="@dimen/_11pxv"
                     android:layout_width="match_parent"
-                    android:text="@{studentFeedbackVM.studentFeedbackModel.txtReportStudent}"
                     style="@style/txtInterbold20" tools:text="@string/msg_report_student"/>
                 <LinearLayout android:id="@+id/linearRowgroup1435"
                     android:layout_height="wrap_content"
@@ -118,7 +111,6 @@
                         android:layout_weight="0.46"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{studentFeedbackVM.studentFeedbackModel.txtPhysicalViolen}"
                         style="@style/txtIntersemibold16" tools:text="@string/msg_physical_violen"/>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtHaveHarmfulOb"
@@ -128,7 +120,6 @@
                         android:layout_weight="0.54"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{studentFeedbackVM.studentFeedbackModel.txtHaveHarmfulOb}"
                         style="@style/txtIntersemibold16" tools:text="@string/msg_have_harmful_ob"/>
                 </LinearLayout>
                 <LinearLayout android:id="@+id/linearRowgroup1432"
@@ -166,7 +157,6 @@
                         android:layout_weight="0.45"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{studentFeedbackVM.studentFeedbackModel.txtVerbalViolence}"
                         style="@style/txtIntersemibold16" tools:text="@string/lbl_verbal_violence"/>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtWarningsReceiv"
@@ -176,7 +166,6 @@
                         android:layout_weight="0.55"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{studentFeedbackVM.studentFeedbackModel.txtWarningsReceiv}"
                         style="@style/txtIntersemibold16" tools:text="@string/msg_warnings_receiv"/>
                 </LinearLayout>
                 <LinearLayout android:gravity="end"
@@ -197,7 +186,6 @@
                         android:layout_weight="0.88"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{studentFeedbackVM.studentFeedbackModel.txtLanguage}"
                         style="@style/txtInterbold14_2" tools:text="@string/lbl_view_past_weeks"/>
                     <ImageView android:id="@+id/imageArrowright"
                         android:layout_height="@dimen/_11pxh"
@@ -226,7 +214,6 @@
                     android:layout_marginTop="@dimen/_21pxv"
                     android:layout_weight="0.95"
                     android:layout_width="0dp" android:singleLine="true"
-                    android:text="@{studentFeedbackVM.studentFeedbackModel.txtContactParents}"
                     style="@style/txtInterbold15_1" textUnderline="true" tools:text="@string/lbl_contact_parents"/>
                 <ImageView android:id="@+id/imageArrowrightOne"
                     android:layout_height="@dimen/_8pxh"

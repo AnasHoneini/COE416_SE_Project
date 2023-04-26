@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="parentViewFiveVM" type="com.se_application.app.modules.parentviewfive.data.viewmodel.ParentViewFiveVM"/>
-    </data>
+
     <LinearLayout android:gravity="start"
         android:id="@+id/linearParentViewF"
         android:layout_height="match_parent"
@@ -42,7 +40,6 @@
                         android:layout_width="0dp"
                         android:lineSpacingExtra="@dimen/_4pxh"
                         android:singleLine="true"
-                        android:text="@{parentViewFiveVM.parentViewFiveModel.txtGrade6Secti}"
                         style="@style/txtInterextrabold18_1" tools:text="@string/msg_grade_6_secti"/>
                     <ImageView android:id="@+id/imageMaximize"
                         android:layout_height="@dimen/_19pxh"
@@ -65,8 +62,7 @@
                 <ImageView android:id="@+id/imageEllipseFive"
                     android:layout_height="@dimen/_128pxh"
                     android:layout_width="@dimen/_129pxh"
-                    android:scaleType="centerCrop" circular="@{true}"
-                    imageRes="@{@drawable/img_ellipse5}"
+                    android:scaleType="centerCrop"
                     tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse5"/>
                 <TextView android:id="@+id/txtDescription"
                     android:layout_height="wrap_content"
@@ -76,7 +72,6 @@
                     android:layout_weight="0.62"
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_7pxh"
-                    android:text="@{parentViewFiveVM.parentViewFiveModel.txtDescription}"
                     style="@style/txtInterextrabold18_1" tools:text="@string/msg_name_joe_james"/>
             </LinearLayout>
         </LinearLayout>
@@ -89,7 +84,6 @@
             android:layout_width="wrap_content"
             android:lineSpacingExtra="@dimen/_4pxh"
             android:singleLine="true"
-            android:text="@{parentViewFiveVM.parentViewFiveModel.txtContactParent}"
             style="@style/txtInterextrabold18_2" tools:text="@string/lbl_contact_parent"/>
         <LinearLayout android:gravity="center_horizontal"
             android:id="@+id/linearColumnparent"
@@ -115,7 +109,6 @@
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{parentViewFiveVM.parentViewFiveModel.txtParent}"
                     style="@style/txtInterextrabold17" tools:text="@string/lbl_parent2"/>
                 <TextView android:ellipsize="end"
                     android:id="@+id/txtJamieJames"
@@ -128,7 +121,6 @@
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{parentViewFiveVM.parentViewFiveModel.txtJamieJames}"
                     style="@style/txtInterextrabold17" tools:text="@string/lbl_jamie_james"/>
             </LinearLayout>
             <LinearLayout android:gravity="start"
@@ -149,7 +141,6 @@
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{parentViewFiveVM.parentViewFiveModel.txtEmail}"
                     style="@style/txtInterextrabold17" tools:text="@string/lbl_email2"/>
                 <TextView android:ellipsize="end"
                     android:id="@+id/txtEmailOne"
@@ -162,7 +153,6 @@
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{parentViewFiveVM.parentViewFiveModel.txtEmailOne}"
                     style="@style/txtInterextrabold17" tools:text="@string/msg_jjames_gmail_co"/>
             </LinearLayout>
             <LinearLayout android:id="@+id/linearRowphonenumber"
@@ -183,7 +173,6 @@
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{parentViewFiveVM.parentViewFiveModel.txtPhoneNumber}"
                     style="@style/txtInterextrabold17" tools:text="@string/lbl_phone_number"/>
                 <EditText
                     android:background="@android:color/transparent"
@@ -199,7 +188,6 @@
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@={parentViewFiveVM.parentViewFiveModel.et96170Value}"
                     android:textColorHint="@color/black_900"
                     style="@style/etInterextrabold17" tools:ignore="Autofill"/>
             </LinearLayout>

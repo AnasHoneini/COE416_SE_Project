@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="parentViewFourVM" type="com.se_application.app.modules.parentviewfour.data.viewmodel.ParentViewFourVM"/>
-    </data>
+
     <LinearLayout android:gravity="start"
         android:id="@+id/linearParentViewF"
         android:layout_height="match_parent"
@@ -41,7 +39,6 @@
                     android:layout_height="@dimen/_235pxh"
                     android:layout_width="match_parent"
                     android:scaleType="fitXY"
-                    imageRes="@{@drawable/img_rectangle24}"
                     tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle24"/>
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbarToolbar"
@@ -72,7 +69,6 @@
                                 android:layout_height="@dimen/_88pxh"
                                 android:layout_width="match_parent"
                                 android:scaleType="fitXY"
-                                imageRes="@{@drawable/img_ellipse3}"
                                 tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse3"/>
                             <LinearLayout
                                 android:id="@+id/linearColumnwelcomeuser"
@@ -91,7 +87,6 @@
                                     android:layout_width="match_parent"
                                     android:lineSpacingExtra="@dimen/_4pxh"
                                     android:singleLine="true"
-                                    android:text="@{parentViewFourVM.parentViewFourModel.txtWelcomeuser}"
                                     style="@style/txtInterregular18" tools:text="@string/lbl_welcome_user"/>
                                 <TextView android:ellipsize="end"
                                     android:gravity="end"
@@ -102,7 +97,6 @@
                                     android:layout_width="match_parent"
                                     android:lineSpacingExtra="@dimen/_4pxh"
                                     android:singleLine="true"
-                                    android:text="@{parentViewFourVM.parentViewFourModel.txtDate2312023}"
                                     style="@style/txtInterregular18" tools:text="@string/lbl_date_23_1_2023"/>
                             </LinearLayout>
                         </FrameLayout>
@@ -119,7 +113,6 @@
             android:layout_width="wrap_content"
             android:lineSpacingExtra="@dimen/_4pxh"
             android:singleLine="true"
-            android:text="@{parentViewFourVM.parentViewFourModel.txtContactSupervi}"
             style="@style/txtInterextrabold18_2" tools:text="@string/msg_contact_supervi"/>
         <LinearLayout android:gravity="center_horizontal"
             android:id="@+id/linearColumninstructor"
@@ -146,7 +139,6 @@
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{parentViewFourVM.parentViewFourModel.txtInstructor}"
                     style="@style/txtInterextrabold17" tools:text="@string/lbl_instructor"/>
                 <TextView android:ellipsize="end"
                     android:id="@+id/txtJoeTekli"
@@ -159,7 +151,6 @@
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{parentViewFourVM.parentViewFourModel.txtJoeTekli}"
                     style="@style/txtInterextrabold17" tools:text="@string/lbl_joe_tekli"/>
             </LinearLayout>
             <LinearLayout android:id="@+id/linearRowemail"
@@ -179,7 +170,6 @@
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{parentViewFourVM.parentViewFourModel.txtEmail}"
                     style="@style/txtInterextrabold17" tools:text="@string/lbl_email2"/>
                 <TextView android:ellipsize="end"
                     android:id="@+id/txtEmailOne"
@@ -192,7 +182,6 @@
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{parentViewFourVM.parentViewFourModel.txtEmailOne}"
                     style="@style/txtInterextrabold17" tools:text="@string/lbl_jtekli_lau_edu"/>
             </LinearLayout>
             <LinearLayout android:id="@+id/linearRowphonenumber"
@@ -213,7 +202,6 @@
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{parentViewFourVM.parentViewFourModel.txtPhoneNumber}"
                     style="@style/txtInterextrabold17" tools:text="@string/lbl_phone_number"/>
                 <TextView android:ellipsize="end"
                     android:id="@+id/txt96170"
@@ -226,7 +214,6 @@
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{parentViewFourVM.parentViewFourModel.txt96170}"
                     style="@style/txtInterextrabold17" tools:text="@string/lbl_961_70"/>
             </LinearLayout>
         </LinearLayout>

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="parentViewOneVM" type="com.se_application.app.modules.parentviewone.data.viewmodel.ParentViewOneVM"/>
-    </data>
+
     <LinearLayout android:gravity="start"
         android:id="@+id/linearColumnrectanglefive"
         android:layout_height="match_parent"
@@ -16,7 +14,6 @@
                 android:layout_height="@dimen/_236pxh"
                 android:layout_width="match_parent"
                 android:scaleType="fitXY"
-                imageRes="@{@drawable/img_rectangle5}"
                 tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle5"/>
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbarToolbar"
@@ -44,7 +41,6 @@
                             android:layout_height="@dimen/_89pxh"
                             android:layout_width="match_parent"
                             android:scaleType="fitXY"
-                            imageRes="@{@drawable/img_ellipse2_5}"
                             tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse2_5"/>
                         <LinearLayout
                             android:id="@+id/linearColumnwelcomeuser"
@@ -63,7 +59,6 @@
                                 android:layout_width="match_parent"
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
-                                android:text="@{parentViewOneVM.parentViewOneModel.txtWelcomeuser}"
                                 style="@style/txtInterregular18" tools:text="@string/lbl_welcome_user"/>
                             <TextView android:ellipsize="end"
                                 android:gravity="end"
@@ -74,7 +69,6 @@
                                 android:layout_width="match_parent"
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
-                                android:text="@{parentViewOneVM.parentViewOneModel.txtDate2312023}"
                                 style="@style/txtInterregular18" tools:text="@string/lbl_date_23_1_2023"/>
                         </LinearLayout>
                     </FrameLayout>
@@ -104,7 +98,7 @@
                         android:layout_width="match_parent"
                         android:orientation="vertical"
                         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                        itemSpace="@{@dimen/_21pxh}" tools:itemCount="2" tools:listitem="@layout/row_listno"/>
+                        tools:itemCount="1" tools:listitem="@layout/row_listno"/>
                     <View android:background="@color/gray_600"
                         android:id="@+id/lineLineSix"
                         android:layout_gravity="center_horizontal"
@@ -127,7 +121,6 @@
                             android:layout_weight="0.05"
                             android:layout_width="0dp"
                             android:singleLine="true"
-                            android:text="@{parentViewOneVM.parentViewOneModel.txtLanguage}"
                             style="@style/txtInterbold16" tools:text="@string/lbl_2"/>
                         <TextView android:id="@+id/txtExposedtoVerb"
                             android:layout_height="wrap_content"
@@ -135,7 +128,6 @@
                             android:layout_marginStart="@dimen/_6pxh"
                             android:layout_weight="0.34"
                             android:layout_width="0dp"
-                            android:text="@{parentViewOneVM.parentViewOneModel.txtExposedtoVerb}"
                             style="@style/txtInterregular16"
                             textUnderline="true" tools:text="@string/msg_exposed_to_verb"/>
                         <TextView android:ellipsize="end"
@@ -147,7 +139,6 @@
                             android:layout_weight="0.24"
                             android:layout_width="0dp"
                             android:singleLine="true"
-                            android:text="@{parentViewOneVM.parentViewOneModel.txtTimeTwo}"
                             style="@style/txtInterregular16" tools:text="@string/lbl_10_00_am"/>
                         <LinearLayout
                             android:id="@+id/linearColumnmilajames"
@@ -163,7 +154,6 @@
                                 android:layout_marginEnd="@dimen/_10pxh"
                                 android:layout_width="match_parent"
                                 android:singleLine="true"
-                                android:text="@{parentViewOneVM.parentViewOneModel.txtMilaJames}"
                                 style="@style/txtIntersemibold16" tools:text="@string/lbl_mila_james"/>
                             <LinearLayout android:gravity="end"
                                 android:id="@+id/linearRowlanguageOne"
@@ -177,7 +167,6 @@
                                     android:layout_height="wrap_content"
                                     android:layout_width="match_parent"
                                     android:singleLine="true"
-                                    android:text="@{parentViewOneVM.parentViewOneModel.txtLanguageOne}"
                                     style="@style/txtInterbold15" tools:text="@string/lbl_view_all"/>
                                 <ImageView
                                     android:id="@+id/imageArrowright"
@@ -248,7 +237,6 @@
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{parentViewOneVM.parentViewOneModel.txtLanguageTwo}"
                     style="@style/txtInterregular15" tools:text="@string/msg_search_for_chil"/>
             </LinearLayout>
             <LinearLayout android:gravity="center_vertical"
@@ -267,7 +255,6 @@
                     android:layout_marginTop="@dimen/_13pxv"
                     android:layout_weight="0.92"
                     android:layout_width="0dp" android:singleLine="true"
-                    android:text="@{parentViewOneVM.parentViewOneModel.txtJoeJamesOne}"
                     style="@style/txtInterbold18_1" tools:text="@string/lbl_joe_james"/>
                 <ImageView android:id="@+id/imageArrowrightOne"
                     android:layout_height="@dimen/_12pxh"
@@ -296,7 +283,6 @@
                     android:layout_marginTop="@dimen/_12pxv"
                     android:layout_weight="0.93"
                     android:layout_width="0dp" android:singleLine="true"
-                    android:text="@{parentViewOneVM.parentViewOneModel.txtMilaJamesOne}"
                     style="@style/txtInterbold18_1" tools:text="@string/lbl_mila_james"/>
                 <ImageView android:id="@+id/imageArrowrightTwo"
                     android:layout_height="@dimen/_12pxh"
@@ -325,7 +311,6 @@
                     android:layout_marginTop="@dimen/_14pxv"
                     android:layout_weight="0.93"
                     android:layout_width="0dp" android:singleLine="true"
-                    android:text="@{parentViewOneVM.parentViewOneModel.txtKarlJames}"
                     style="@style/txtInterbold18_1" tools:text="@string/lbl_karl_james"/>
                 <ImageView android:id="@+id/imageArrowrightThree"
                     android:layout_height="@dimen/_12pxh"
@@ -352,7 +337,6 @@
                     android:layout_marginTop="@dimen/_18pxv"
                     android:layout_weight="0.96"
                     android:layout_width="0dp" android:singleLine="true"
-                    android:text="@{parentViewOneVM.parentViewOneModel.txtContactSupervi}"
                     style="@style/txtInterbold15_1" textUnderline="true" tools:text="@string/msg_contact_supervi"/>
                 <ImageView android:id="@+id/imageArrowrightFour"
                     android:layout_height="@dimen/_8pxh"

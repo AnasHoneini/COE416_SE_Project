@@ -19,7 +19,6 @@
                 android:layout_height="@dimen/_120pxh"
                 android:layout_width="match_parent"
                 android:scaleType="fitXY"
-                imageRes="@{@drawable/img_rectangle5_152x360}"
                 tools:ignore="ContentDescription"
                 tools:src="@drawable/img_rectangle5_152x360"/>
 
@@ -51,7 +50,6 @@
 
                     <ImageView
                         android:id="@+id/imageEllipseTwo"
-                        imageRes="@{@drawable/img_ellipse2_89x202}"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="start"
@@ -102,14 +100,15 @@
         </FrameLayout>
 
         <LinearLayout
+            android:gravity="center_vertical"
             android:id="@+id/linearRowsearch"
-            android:layout_gravity="bottom|center"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_39pxh"
             android:layout_marginStart="@dimen/_39pxh"
-            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_marginTop="@dimen/_2pxh"
             android:layout_width="match_parent"
-            android:orientation="horizontal" style="@style/groupStylebluegray_100cornerRadius">
+            android:orientation="horizontal"
+            style="@style/groupStylebluegray_100cornerRadius">
             <ImageView android:id="@+id/imageSearch"
                 android:layout_height="@dimen/_18pxh"
                 android:layout_marginBottom="@dimen/_8pxv"
@@ -120,21 +119,23 @@
                 android:src="@drawable/img_search"
                 tools:ignore="ContentDescription" tools:src="@drawable/img_search"/>
 
-            <TextView
-                android:id="@+id/txtLanguage"
+            <EditText
+                android:id="@id/searchStudents"
                 style="@style/txtInterregular15"
-                android:layout_width="0dp"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_26pxh"
                 android:layout_marginTop="@dimen/_11pxv"
                 android:layout_marginEnd="@dimen/_74pxh"
                 android:layout_marginBottom="@dimen/_7pxv"
-                android:layout_weight="0.89"
                 android:ellipsize="end"
                 android:lineSpacingExtra="@dimen/_4pxh"
+                android:minHeight="48dp"
                 android:singleLine="true"
-                tools:ignore="TextSizeCheck"
-                tools:text="@string/msg_search_for_stud" />
+                tools:ignore="LabelFor,TextSizeCheck"
+                tools:text="@string/msg_search_for_stud"
+                android:autofillHints=""
+                android:inputType="textShortMessage" />
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -244,7 +245,7 @@
             android:textAllCaps="false"
             android:textSize="@dimen/_18pxh"
             tools:ignore="SpUsage,TextSizeCheck"
-            tools:text="Gr 8" />
+            tools:text="Gr 11" />
 
         <LinearLayout
             android:gravity="center_vertical"
@@ -333,7 +334,7 @@
             android:textAllCaps="false"
             android:textSize="@dimen/_18pxh"
             tools:ignore="SpUsage,TextSizeCheck"
-            tools:text="Gr 9" />
+            tools:text="Gr 12" />
 
         <LinearLayout
             android:gravity="center_vertical"

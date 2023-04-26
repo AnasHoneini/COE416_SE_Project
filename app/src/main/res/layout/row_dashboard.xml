@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="dashboardRowModel" type="com.se_application.app.modules.dashboard.data.model.DashboardRowModel"/>
-    </data>
+
     <LinearLayout android:id="@+id/linearRowno"
         android:layout_height="wrap_content"
         android:layout_width="match_parent" android:orientation="horizontal">
@@ -11,7 +9,6 @@
             android:layout_marginTop="@dimen/_1pxv"
             android:layout_weight="0.14" android:layout_width="0dp"
             android:singleLine="true"
-            android:text="@{dashboardRowModel.txtNo}"
             style="@style/txtInterbold16" tools:text="@string/lbl_no"/>
 
         <TextView
@@ -25,7 +22,6 @@
             android:layout_weight="0.33"
             android:ellipsize="end"
             android:singleLine="true"
-            android:text="@{dashboardRowModel.txtIncident}"
             tools:text="@string/lbl_incident" />
 
         <TextView android:ellipsize="end" android:id="@+id/txtTime"
@@ -34,7 +30,6 @@
             android:layout_marginStart="@dimen/_41pxh"
             android:layout_weight="0.21" android:layout_width="0dp"
             android:singleLine="true"
-            android:text="@{dashboardRowModel.txtTime}"
             style="@style/txtIntersemibold16" tools:text="@string/lbl_time"/>
         <TextView android:ellipsize="end" android:id="@+id/txtStudent"
             android:layout_height="wrap_content"
@@ -43,7 +38,6 @@
             android:layout_marginTop="@dimen/_1pxv"
             android:layout_weight="0.33" android:layout_width="0dp"
             android:singleLine="true"
-            android:text="@{dashboardRowModel.txtStudent}"
             style="@style/txtIntersemibold16" tools:text="@string/lbl_student"/>
     </LinearLayout>
 </layout>

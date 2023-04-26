@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="viewReportsVM" type="com.se_application.app.modules.viewreports.data.viewmodel.ViewReportsVM"/>
-    </data>
+
     <FrameLayout android:id="@+id/frameViewReports"
         android:layout_height="match_parent"
         android:layout_width="match_parent" style="@style/groupStylewhite_A700">
@@ -30,7 +28,6 @@
                 android:layout_weight="0.79" android:layout_width="0dp"
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:singleLine="true"
-                android:text="@{viewReportsVM.viewReportsModel.txtGrade6Secti}"
                 style="@style/txtInterextrabold18_1" tools:text="@string/msg_grade_6_secti"/>
             <ImageView android:id="@+id/imageMaximize"
                 android:layout_height="@dimen/_19pxh"
@@ -73,7 +70,6 @@
                         android:layout_marginStart="@dimen/_13pxh"
                         android:layout_width="wrap_content"
                         android:singleLine="true"
-                        android:text="@{viewReportsVM.viewReportsModel.txtStudents}"
                         style="@style/txtInterextrabold16_2" tools:text="@string/lbl_students"/>
                     <View android:background="@color/deep_orange_201"
                         android:id="@+id/lineLineOne"
@@ -98,7 +94,6 @@
                         android:layout_marginStart="@dimen/_20pxh"
                         android:layout_width="match_parent"
                         android:singleLine="true"
-                        android:text="@{viewReportsVM.viewReportsModel.txtReport}"
                         style="@style/txtInterextrabold16" tools:text="@string/lbl_report"/>
                     <View android:background="@color/deep_orange_A400"
                         android:id="@+id/lineLineTwo"
@@ -116,7 +111,6 @@
                 android:layout_marginTop="@dimen/_18pxv"
                 android:layout_width="match_parent"
                 android:singleLine="true"
-                android:text="@{viewReportsVM.viewReportsModel.txtTaptoviewins}"
                 style="@style/txtInterbold14" tools:text="@string/msg_tap_to_view_ins"/>
             <View android:background="@color/gray_600"
                 android:id="@+id/lineLineFive"
@@ -216,7 +210,6 @@
                                     android:layout_marginStart="@dimen/_7pxh"
                                     android:layout_width="wrap_content"
                                     android:singleLine="true"
-                                    android:text="@{viewReportsVM.viewReportsModel.txtLanguage}"
                                     style="@style/txtIntersemibold14" tools:text="@string/lbl_joe_james2"/>
                                     <View
                                     android:background="@color/black_900"
@@ -235,7 +228,6 @@
                                     android:layout_width="0dp"
                                     android:lineSpacingExtra="@dimen/_3pxh"
                                     android:singleLine="true"
-                                    android:text="@{viewReportsVM.viewReportsModel.txt4232023}"
                                     style="@style/txtInterbold14"
                                     textUnderline="true" tools:text="@string/lbl_4_23_2023"/>
                                 </LinearLayout>
@@ -261,7 +253,6 @@
                                 android:layout_weight="0.39"
                                 android:layout_width="0dp"
                                 android:singleLine="true"
-                                android:text="@{viewReportsVM.viewReportsModel.txtLanguageOne}"
                                 style="@style/txtIntersemibold14" tools:text="@string/lbl_joe_james2"/>
                             <LinearLayout
                                 android:id="@+id/linearRow4232023One"
@@ -277,7 +268,6 @@
                                     android:layout_width="0dp"
                                     android:lineSpacingExtra="@dimen/_3pxh"
                                     android:singleLine="true"
-                                    android:text="@{viewReportsVM.viewReportsModel.txt4232023One}"
                                     style="@style/txtInterbold14"
                                     textUnderline="true" tools:text="@string/lbl_4_23_2023"/>
                                 <ImageView
@@ -330,7 +320,6 @@
                                     android:layout_weight="0.5"
                                     android:layout_width="0dp"
                                     android:singleLine="true"
-                                    android:text="@{viewReportsVM.viewReportsModel.txtLanguageTwo}"
                                     style="@style/txtIntersemibold14" tools:text="@string/lbl_joe_james2"/>
                                 <TextView android:ellipsize="end"
                                     android:id="@+id/txt4232023Two"
@@ -341,7 +330,6 @@
                                     android:layout_width="0dp"
                                     android:lineSpacingExtra="@dimen/_3pxh"
                                     android:singleLine="true"
-                                    android:text="@{viewReportsVM.viewReportsModel.txt4232023Two}"
                                     style="@style/txtInterbold14"
                                     textUnderline="true" tools:text="@string/lbl_4_23_2023"/>
                             </LinearLayout>
@@ -391,7 +379,6 @@
                                     android:layout_weight="0.5"
                                     android:layout_width="0dp"
                                     android:singleLine="true"
-                                    android:text="@{viewReportsVM.viewReportsModel.txtLanguageThree}"
                                     style="@style/txtIntersemibold14" tools:text="@string/lbl_joe_james2"/>
                                 <TextView android:ellipsize="end"
                                     android:id="@+id/txt4232023Three"
@@ -402,7 +389,6 @@
                                     android:layout_width="0dp"
                                     android:lineSpacingExtra="@dimen/_3pxh"
                                     android:singleLine="true"
-                                    android:text="@{viewReportsVM.viewReportsModel.txt4232023Three}"
                                     style="@style/txtInterbold14"
                                     textUnderline="true" tools:text="@string/lbl_4_23_2023"/>
                             </LinearLayout>
@@ -437,7 +423,6 @@
                         android:layout_marginTop="@dimen/_8pxv"
                         android:layout_width="wrap_content"
                         android:singleLine="true"
-                        android:text="@{viewReportsVM.viewReportsModel.txtLanguageFour}"
                         style="@style/txtIntersemibold14" tools:text="@string/lbl_joe_james2"/>
                     <View android:background="@color/black_900"
                         android:id="@+id/lineLineSeventeen"
@@ -460,7 +445,6 @@
                         android:layout_marginTop="@dimen/_9pxv"
                         android:layout_width="wrap_content"
                         android:singleLine="true"
-                        android:text="@{viewReportsVM.viewReportsModel.txtLanguageFive}"
                         style="@style/txtIntersemibold14" tools:text="@string/lbl_joe_james2"/>
                     <View android:background="@color/black_900"
                         android:id="@+id/lineLineNineteen"
@@ -483,7 +467,6 @@
                         android:layout_marginTop="@dimen/_9pxv"
                         android:layout_width="wrap_content"
                         android:singleLine="true"
-                        android:text="@{viewReportsVM.viewReportsModel.txtLanguageSix}"
                         style="@style/txtIntersemibold14" tools:text="@string/lbl_joe_james2"/>
                     <View android:background="@color/black_900"
                         android:id="@+id/lineLineTwentyOne"
@@ -506,7 +489,6 @@
                         android:layout_marginTop="@dimen/_10pxv"
                         android:layout_width="wrap_content"
                         android:singleLine="true"
-                        android:text="@{viewReportsVM.viewReportsModel.txtLanguageSeven}"
                         style="@style/txtIntersemibold14" tools:text="@string/lbl_joe_james2"/>
                     <View android:background="@color/black_900"
                         android:id="@+id/lineLineTwentyThree"

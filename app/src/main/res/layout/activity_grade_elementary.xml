@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="gradeElementaryVM" type="com.se_application.app.modules.gradeelementary.data.viewmodel.GradeElementaryVM"/>
-    </data>
+
     <LinearLayout
         android:id="@+id/linearColumnrectanglefive"
         android:gravity="center_horizontal"
@@ -22,7 +20,6 @@
                 android:layout_height="@dimen/_120pxh"
                 android:layout_width="match_parent"
                 android:scaleType="fitXY"
-                imageRes="@{@drawable/img_rectangle5_152x360}"
                 tools:ignore="ContentDescription"
                 tools:src="@drawable/img_rectangle5_152x360"/>
 
@@ -54,7 +51,6 @@
 
                     <ImageView
                         android:id="@+id/imageEllipseTwo"
-                        imageRes="@{@drawable/img_ellipse2_89x202}"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="start"
@@ -83,7 +79,6 @@
                             android:gravity="start"
                             android:lineSpacingExtra="@dimen/_4pxh"
                             android:singleLine="true"
-                            android:text="@{gradeElementaryVM.gradeElementaryModel.txtWelcomeuser}"
                             tools:ignore="TextSizeCheck"
                             tools:text="@string/lbl_welcome_user" />
 
@@ -98,7 +93,6 @@
                             android:gravity="end"
                             android:lineSpacingExtra="@dimen/_4pxh"
                             android:singleLine="true"
-                            android:text="@{gradeElementaryVM.gradeElementaryModel.txtDate2312023}"
                             tools:ignore="TextSizeCheck"
                             tools:text="@string/lbl_date_23_1_2023" />
                     </LinearLayout>
@@ -139,7 +133,6 @@
                 android:ellipsize="end"
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:singleLine="true"
-                android:text="@{gradeElementaryVM.gradeElementaryModel.txtLanguage}"
                 tools:ignore="TextSizeCheck"
                 tools:text="@string/msg_search_for_stud" />
                 </LinearLayout>
@@ -181,7 +174,6 @@
                             android:paddingEnd="@dimen/_30pxh"
                             android:paddingBottom="@dimen/_10pxv"
                             android:singleLine="true"
-                            android:text="@={gradeElementaryVM.gradeElementaryModel.etGrCounterValue}"
                             tools:ignore="Autofill,TextSizeCheck"
                             tools:text="@string/lbl_gr_1" />
 
@@ -209,12 +201,11 @@
                                 android:ellipsize="end"
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
-                                android:text="@{gradeElementaryVM.gradeElementaryModel.txtA}"
                                 tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextSizeCheck"
                                 tools:text="@string/lbl_a" />
 
                             <ImageView
-                                android:id="@+id/imageArrowright"
+                                android:id="@id/imageArrowright"
                                 android:layout_width="@dimen/_6pxh"
                                 android:layout_height="@dimen/_8pxh"
                                 android:layout_marginStart="@dimen/_10pxh"
@@ -251,12 +242,11 @@
                                 android:ellipsize="end"
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
-                                android:text="@{gradeElementaryVM.gradeElementaryModel.txtLanguageOne}"
                                 tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextSizeCheck"
                                 tools:text="@string/lbl_b" />
 
                             <ImageView
-                                android:id="@id/imageArrowright"
+                                android:id="@+id/imageArrowright1"
                                 android:layout_width="@dimen/_6pxh"
                                 android:layout_height="@dimen/_8pxh"
                                 android:layout_marginStart="@dimen/_10pxh"
@@ -318,12 +308,11 @@
                                 android:ellipsize="end"
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
-                                android:text="@{gradeElementaryVM.gradeElementaryModel.txtA}"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
                                 tools:text="@string/lbl_a" />
 
                             <ImageView
-                                android:id="@id/imageArrowright"
+                                android:id="@+id/imageArrowright2"
                                 android:layout_width="@dimen/_6pxh"
                                 android:layout_height="@dimen/_8pxh"
                                 android:layout_marginStart="@dimen/_10pxh"
@@ -360,12 +349,11 @@
                                 android:ellipsize="end"
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
-                                android:text="@{gradeElementaryVM.gradeElementaryModel.txtLanguageOne}"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck,TextSizeCheck"
                                 tools:text="@string/lbl_b" />
 
                             <ImageView
-                                android:id="@id/imageArrowright"
+                                android:id="@+id/imageArrowright3"
                                 android:layout_width="@dimen/_6pxh"
                                 android:layout_height="@dimen/_8pxh"
                                 android:layout_marginStart="@dimen/_10pxh"
@@ -427,12 +415,11 @@
                                 android:ellipsize="end"
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
-                                android:text="@{gradeElementaryVM.gradeElementaryModel.txtA}"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck,TextSizeCheck"
                                 tools:text="@string/lbl_a" />
 
                             <ImageView
-                                android:id="@id/imageArrowright"
+                                android:id="@+id/imageArrowright4"
                                 android:layout_width="@dimen/_6pxh"
                                 android:layout_height="@dimen/_8pxh"
                                 android:layout_marginStart="@dimen/_10pxh"
@@ -469,12 +456,11 @@
                                 android:ellipsize="end"
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
-                                android:text="@{gradeElementaryVM.gradeElementaryModel.txtLanguageOne}"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
                                 tools:text="@string/lbl_b" />
 
                             <ImageView
-                                android:id="@id/imageArrowright"
+                                android:id="@+id/imageArrowright5"
                                 android:layout_width="@dimen/_6pxh"
                                 android:layout_height="@dimen/_8pxh"
                                 android:layout_marginStart="@dimen/_10pxh"
@@ -542,12 +528,11 @@
                                 android:ellipsize="end"
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
-                                android:text="@{gradeElementaryVM.gradeElementaryModel.txtA}"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
                                 tools:text="@string/lbl_a" />
 
                             <ImageView
-                                android:id="@id/imageArrowright"
+                                android:id="@+id/imageArrowright6"
                                 android:layout_width="@dimen/_6pxh"
                                 android:layout_height="@dimen/_8pxh"
                                 android:layout_marginStart="@dimen/_10pxh"
@@ -584,12 +569,11 @@
                                 android:ellipsize="end"
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
-                                android:text="@{gradeElementaryVM.gradeElementaryModel.txtLanguageOne}"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
                                 tools:text="@string/lbl_b" />
 
                             <ImageView
-                                android:id="@id/imageArrowright"
+                                android:id="@+id/imageArrowright7"
                                 android:layout_width="@dimen/_6pxh"
                                 android:layout_height="@dimen/_8pxh"
                                 android:layout_marginStart="@dimen/_10pxh"
@@ -652,12 +636,11 @@
                                 android:ellipsize="end"
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
-                                android:text="@{gradeElementaryVM.gradeElementaryModel.txtA}"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
                                 tools:text="@string/lbl_a" />
 
                             <ImageView
-                                android:id="@id/imageArrowright"
+                                android:id="@+id/imageArrowright9"
                                 android:layout_width="@dimen/_6pxh"
                                 android:layout_height="@dimen/_8pxh"
                                 android:layout_marginStart="@dimen/_10pxh"
@@ -665,7 +648,6 @@
                                 android:layout_marginEnd="@dimen/_15pxh"
                                 android:layout_marginBottom="@dimen/_10pxv"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/img_arrowright_gray_902"
                                 tools:ignore="ContentDescription"
                                 tools:src="@drawable/img_arrowright_gray_902" />
                         </LinearLayout>
@@ -694,12 +676,11 @@
                                 android:ellipsize="end"
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
-                                android:text="@{gradeElementaryVM.gradeElementaryModel.txtLanguageOne}"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
                                 tools:text="@string/lbl_b" />
 
                             <ImageView
-                                android:id="@id/imageArrowright"
+                                android:id="@+id/imageArrowright10"
                                 android:layout_width="@dimen/_6pxh"
                                 android:layout_height="@dimen/_8pxh"
                                 android:layout_marginStart="@dimen/_10pxh"
@@ -709,7 +690,7 @@
                                 android:scaleType="fitXY"
                                 android:src="@drawable/img_arrowright_gray_902"
                                 tools:ignore="ContentDescription"
-                                tools:src="@drawable/img_arrowright_gray_902" />
+                                />
                         </LinearLayout>
                     </FrameLayout>
 
@@ -762,12 +743,11 @@
                                 android:ellipsize="end"
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
-                                android:text="@{gradeElementaryVM.gradeElementaryModel.txtA}"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
                                 tools:text="@string/lbl_a" />
 
                             <ImageView
-                                android:id="@id/imageArrowright"
+                                android:id="@+id/imageArrowright11"
                                 android:layout_width="@dimen/_6pxh"
                                 android:layout_height="@dimen/_8pxh"
                                 android:layout_marginStart="@dimen/_10pxh"
@@ -804,12 +784,11 @@
                                 android:ellipsize="end"
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
-                                android:text="@{gradeElementaryVM.gradeElementaryModel.txtLanguageOne}"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
                                 tools:text="@string/lbl_b" />
 
                             <ImageView
-                                android:id="@id/imageArrowright"
+                                android:id="@+id/imageArrowright12"
                                 android:layout_width="@dimen/_6pxh"
                                 android:layout_height="@dimen/_8pxh"
                                 android:layout_marginStart="@dimen/_10pxh"

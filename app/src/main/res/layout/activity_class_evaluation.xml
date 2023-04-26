@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="classEvaluationVM" type="com.se_application.app.modules.classevaluation.data.viewmodel.ClassEvaluationVM"/>
-    </data>
+
     <FrameLayout android:id="@+id/frameClassEvaluatio"
         android:layout_height="match_parent"
         android:layout_width="match_parent" style="@style/groupStylewhite_A700">
@@ -38,7 +36,6 @@
                     android:layout_width="match_parent"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{classEvaluationVM.classEvaluationModel.txtGrade6Secti}"
                     style="@style/txtInterextrabold18_1"
                     textUnderline="true" tools:text="@string/msg_grade_6_secti"/>
                 <TextView android:gravity="start"
@@ -46,7 +43,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_23pxv"
                     android:layout_width="match_parent"
-                    android:text="@{classEvaluationVM.classEvaluationModel.txtClassEvaluatio}"
                     style="@style/txtInterbold20" tools:text="@string/msg_class_evaluatio2"/>
             </LinearLayout>
             <ImageView android:id="@+id/imageMaximize"
@@ -76,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                itemSpace="@{@dimen/_15pxh}" tools:itemCount="3" tools:listitem="@layout/row_listphysicalviolen"/>
+                 tools:itemCount="3" tools:listitem="@layout/row_listphysicalviolen"/>
             <LinearLayout android:id="@+id/linearRowcancel"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_3pxv"

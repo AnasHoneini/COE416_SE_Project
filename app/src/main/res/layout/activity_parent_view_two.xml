@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="parentViewTwoVM" type="com.se_application.app.modules.parentviewtwo.data.viewmodel.ParentViewTwoVM"/>
-    </data>
+
     <LinearLayout android:gravity="start"
         android:id="@+id/linearParentViewT"
         android:layout_height="match_parent"
@@ -40,7 +38,6 @@
                         android:layout_width="0dp"
                         android:lineSpacingExtra="@dimen/_4pxh"
                         android:singleLine="true"
-                        android:text="@{parentViewTwoVM.parentViewTwoModel.txtGrade6Secti}"
                         style="@style/txtInterextrabold18_1" tools:text="@string/msg_grade_6_secti"/>
                 </LinearLayout>
             </androidx.appcompat.widget.Toolbar>
@@ -55,8 +52,6 @@
                 <ImageView android:id="@+id/imageEllipseFive"
                     android:layout_height="@dimen/_128pxh"
                     android:layout_width="@dimen/_129pxh"
-                    android:scaleType="centerCrop" circular="@{true}"
-                    imageRes="@{@drawable/img_ellipse5}"
                     tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse5"/>
                 <TextView android:id="@+id/txtDescription"
                     android:layout_height="wrap_content"
@@ -66,7 +61,6 @@
                     android:layout_weight="0.62"
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_7pxh"
-                    android:text="@{parentViewTwoVM.parentViewTwoModel.txtDescription}"
                     style="@style/txtInterextrabold18_1" tools:text="@string/msg_name_joe_james"/>
             </LinearLayout>
         </LinearLayout>
@@ -84,7 +78,6 @@
                 android:layout_weight="0.32" android:layout_width="0dp"
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:singleLine="true"
-                android:text="@{parentViewTwoVM.parentViewTwoModel.txtReports}"
                 style="@style/txtInterextrabold18_2" tools:text="@string/lbl_reports"/>
             <TextView android:ellipsize="end"
                 android:id="@+id/txtOnJan23202"
@@ -94,7 +87,6 @@
                 android:layout_weight="0.68" android:layout_width="0dp"
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:singleLine="true"
-                android:text="@{parentViewTwoVM.parentViewTwoModel.txtOnJan23202}"
                 style="@style/txtInterextrabold18_2"
                 textUnderline="true" tools:text="@string/msg_on_jan_23_202"/>
         </LinearLayout>
@@ -114,7 +106,7 @@
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                itemSpace="@{@dimen/_15pxh}" tools:itemCount="2" tools:listitem="@layout/row_listreport"/>
+                tools:itemCount="2" tools:listitem="@layout/row_listreport"/>
             <TextView android:ellipsize="end"
                 android:id="@+id/txtDescriptionOne"
                 android:layout_height="wrap_content"
@@ -123,7 +115,6 @@
                 android:layout_marginTop="@dimen/_6pxv"
                 android:layout_width="wrap_content"
                 android:singleLine="true"
-                android:text="@{parentViewTwoVM.parentViewTwoModel.txtDescriptionOne}"
                 style="@style/txtInterbold13" tools:text="@string/lbl_description"/>
             <View android:background="@color/white_A700"
                 android:id="@+id/viewRectangleTwentyTwo"
@@ -159,7 +150,6 @@
                     android:layout_marginBottom="@dimen/_4pxv"
                     android:layout_weight="0.27"
                     android:layout_width="0dp"
-                    android:text="@{parentViewTwoVM.parentViewTwoModel.txtFightwithafrOne}"
                     style="@style/txtInterregular13_2" tools:text="@string/msg_fight_with_a_f"/>
                 <TextView android:id="@+id/txtChadiBouRjeil"
                     android:layout_height="wrap_content"
@@ -168,7 +158,6 @@
                     android:layout_marginTop="@dimen/_1pxv"
                     android:layout_weight="0.23"
                     android:layout_width="0dp"
-                    android:text="@{parentViewTwoVM.parentViewTwoModel.txtChadiBouRjeil}"
                     style="@style/txtInterregular13_2" tools:text="@string/msg_chadi_bou_rjeil"/>
                 <TextView android:id="@+id/txtTimeOne"
                     android:layout_height="wrap_content"
@@ -177,7 +166,6 @@
                     android:layout_marginTop="@dimen/_1pxv"
                     android:layout_weight="0.31"
                     android:layout_width="0dp"
-                    android:text="@{parentViewTwoVM.parentViewTwoModel.txtTimeOne}"
                     style="@style/txtInterregular13_2" tools:text="@string/msg_dec_10_2022_12"/>
                 <TextView android:id="@+id/txtVerbalWarning"
                     android:layout_height="wrap_content"
@@ -185,7 +173,6 @@
                     android:layout_marginTop="@dimen/_2pxv"
                     android:layout_weight="0.19"
                     android:layout_width="0dp"
-                    android:text="@{parentViewTwoVM.parentViewTwoModel.txtVerbalWarning}"
                     style="@style/txtInterregular13_2" tools:text="@string/lbl_verbal_warning"/>
             </LinearLayout>
             <TextView android:ellipsize="end"
@@ -196,7 +183,6 @@
                 android:layout_marginTop="@dimen/_3pxv"
                 android:layout_width="wrap_content"
                 android:singleLine="true"
-                android:text="@{parentViewTwoVM.parentViewTwoModel.txtDescriptionTwo}"
                 style="@style/txtInterbold13" tools:text="@string/lbl_description"/>
             <View android:background="@color/white_A700"
                 android:id="@+id/viewRectangleTwentyThree"
@@ -235,7 +221,6 @@
                     android:layout_marginTop="@dimen/_1pxv"
                     android:layout_weight="0.91"
                     android:layout_width="0dp" android:singleLine="true"
-                    android:text="@{parentViewTwoVM.parentViewTwoModel.txtTotalperday}"
                     style="@style/txtInterbold16_1" tools:text="@string/lbl_total_per_day"/>
                 <TextView android:ellipsize="end"
                     android:id="@+id/txtTwo"
@@ -244,7 +229,6 @@
                     android:layout_marginStart="@dimen/_43pxh"
                     android:layout_weight="0.09"
                     android:layout_width="0dp" android:singleLine="true"
-                    android:text="@{parentViewTwoVM.parentViewTwoModel.txtTwo}"
                     style="@style/txtInterbold16_1" tools:text="@string/lbl_22"/>
             </LinearLayout>
         </LinearLayout>
