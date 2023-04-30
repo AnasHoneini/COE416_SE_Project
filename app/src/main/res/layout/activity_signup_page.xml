@@ -244,6 +244,7 @@
             android:singleLine="true"
             android:textAllCaps="false"
             android:textColor="#212121"
+            android:onClick="goToLogin"
             tools:ignore="TextSizeCheck,DuplicateSpeakableTextCheck"
             android:text="Signup" />
     </LinearLayout>

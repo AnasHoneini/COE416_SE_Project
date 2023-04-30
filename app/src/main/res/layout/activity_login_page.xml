@@ -49,6 +49,7 @@
                     android:background="@android:color/transparent"
                     android:ellipsize="end"
                     android:singleLine="true"
+                    android:onClick="goToLogin"
                     android:text="Login" />
 
                 <Button
@@ -58,11 +59,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_70pxh"
                     android:layout_weight="0.44"
-                    android:background="@android:color/transparent"
                     android:ellipsize="end"
+                    android:background="@android:color/transparent"
                     android:singleLine="true"
-                    android:textColor="#EF6C00"
-                    tools:ignore="TextSizeCheck"
                     android:onClick="goToSignup"
                     android:text="Signup" />
 
@@ -178,13 +177,15 @@
             android:layout_marginEnd="@dimen/_29pxh"
             android:layout_marginBottom="@dimen/_28pxv"
             android:ellipsize="end"
+            android:background="@android:color/transparent"
             android:gravity="center"
+            android:textColor="@color/deep_orange_A400_d8"
             android:paddingStart="@dimen/_30pxh"
             android:paddingTop="@dimen/_7pxv"
             android:paddingEnd="@dimen/_30pxh"
             android:paddingBottom="@dimen/_7pxv"
             android:singleLine="true"
-            tools:ignore="TextSizeCheck"
+            android:onClick="goToDashboard"
             android:text="Login" />
 
     </LinearLayout>

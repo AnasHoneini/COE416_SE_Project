@@ -24,28 +24,15 @@ class ActivitySignUp: AppCompatActivity() {
         passwordEditText = findViewById(R.id.myPassword)
         signupButton = findViewById(R.id.btnSignupDone)
 
-        signupButton.setOnClickListener {
-            val name = nameEditText.text.toString()
-            val email = emailEditText.text.toString()
-            val password = passwordEditText.text.toString()
-
-            if (name.isBlank() || email.isBlank() || password.isBlank() ) {
-                // Show an error message if any of the fields is blank
-                Toast.makeText(this, "Please fill out all fields.", Toast.LENGTH_SHORT).show()
-            } else {
-                // TODO: Implement sign up logic here
-                Toast.makeText(this, "Sign up successful!", Toast.LENGTH_SHORT).show()
-                // You can start a new activity here or take any other action
-            }
-        }
 
     }
     fun goToLogin(view: View) {
-        val intent = Intent(this, ActivitySignUp::class.java)
+        val intent = Intent(this, ActivityLogin::class.java)
         startActivity(intent)
     }
 
     fun goToSignup(view: View) {
-        val intent = Intent(this, ActivityLogin::class.java)
+        val intent = Intent(this, ActivitySignUp::class.java)
         startActivity(intent)
-    }}
+    }
+}
