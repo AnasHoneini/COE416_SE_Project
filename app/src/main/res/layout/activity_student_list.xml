@@ -635,7 +635,7 @@
                 tools:ignore="ContentDescription" tools:src="@drawable/img_search"/>
 
             <EditText
-                android:id="@id/searchStudents"
+                android:id="@+id/searchStudents"
                 style="@style/txtInterregular15"
                 android:layout_width="160dp"
                 android:layout_height="50dp"

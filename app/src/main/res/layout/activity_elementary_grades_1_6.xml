@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:andriod="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLoginPage"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".ActivityElementary1To6">
 
-    <LinearLayout
-        android:id="@+id/linearColumnrectanglefive"
-        android:gravity="center_horizontal"
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearGradeSectionKG"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:orientation="vertical"
@@ -21,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:scaleType="fitXY"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_rectangle5_152x360"/>
+                android:src="@drawable/img_rectangle5_152x360"/>
 
 
             <LinearLayout android:id="@+id/linearRowarrowleft"
@@ -39,6 +45,7 @@
                     android:layout_marginTop="@dimen/_25pxv"
                     android:layout_marginBottom="@dimen/_111pxv"
                     android:scaleType="fitXY"
+                    android:onClick="goBackToElementaryDashboard"
                     android:src="@drawable/img_arrowleft"
                     tools:ignore="ContentDescription" />
 
@@ -49,21 +56,12 @@
                     android:layout_marginStart="@dimen/_120pxh"
                     android:layout_marginBottom="@dimen/_63pxv">
 
-                    <ImageView
-                        android:id="@+id/imageEllipseTwo"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="start"
-                        android:scaleType="fitXY"
-                        tools:ignore="ContentDescription"
-                        tools:src="@drawable/img_ellipse2_89x202" />
-
                     <LinearLayout
                         android:id="@+id/linearColumnwelcomeuser"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
-                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_50pxh"
                         android:layout_marginTop="@dimen/_14pxv"
                         android:layout_marginEnd="@dimen/_6pxh"
                         android:layout_marginBottom="@dimen/_14pxv"
@@ -78,64 +76,19 @@
                             android:ellipsize="end"
                             android:gravity="start"
                             android:lineSpacingExtra="@dimen/_4pxh"
-                            android:singleLine="true"
-                            tools:ignore="TextSizeCheck"
-                            tools:text="@string/lbl_welcome_user" />
+                            android:singleLine="true" />
 
-                        <TextView
-                            android:id="@+id/txtDate2312023"
-                            style="@style/txtInterregular18"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_10pxh"
-                            android:layout_marginTop="@dimen/_9pxv"
-                            android:ellipsize="end"
-                            android:gravity="end"
-                            android:lineSpacingExtra="@dimen/_4pxh"
-                            android:singleLine="true"
-                            tools:ignore="TextSizeCheck"
-                            tools:text="@string/lbl_date_23_1_2023" />
+                        <TextClock
+                            android:id="@+id/textClock"
+                            android:layout_width="@dimen/_150pxh"
+                            android:layout_height="@dimen/_40pxh"
+                            android:layout_marginTop="@dimen/_8pxh"
+                            android:textSize="24sp" />
+
                     </LinearLayout>
                 </FrameLayout>
             </LinearLayout>
         </FrameLayout>
-
-        <LinearLayout
-            android:id="@+id/linearRowsearch"
-            android:layout_gravity="bottom|center"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_39pxh"
-            android:layout_marginStart="@dimen/_39pxh"
-            android:layout_marginTop="@dimen/_10pxv"
-            android:layout_marginBottom="@dimen/_30pxh"
-            android:layout_width="match_parent"
-            android:orientation="horizontal" style="@style/groupStylebluegray_100cornerRadius">
-                    <ImageView android:id="@+id/imageSearch"
-                        android:layout_height="@dimen/_18pxh"
-                        android:layout_marginBottom="@dimen/_8pxv"
-                        android:layout_marginStart="@dimen/_31pxh"
-                        android:layout_marginTop="@dimen/_10pxv"
-                        android:layout_width="@dimen/_16pxh"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/img_search"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_search"/>
-
-            <TextView
-                android:id="@+id/txtLanguage"
-                style="@style/txtInterregular15"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_26pxh"
-                android:layout_marginTop="@dimen/_11pxv"
-                android:layout_marginEnd="@dimen/_74pxh"
-                android:layout_marginBottom="@dimen/_7pxv"
-                android:layout_weight="0.89"
-                android:ellipsize="end"
-                android:lineSpacingExtra="@dimen/_4pxh"
-                android:singleLine="true"
-                tools:ignore="TextSizeCheck"
-                tools:text="@string/msg_search_for_stud" />
-                </LinearLayout>
 
         <LinearLayout
             android:gravity="start"
@@ -804,4 +757,4 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-</layout>
+</RelativeLayout>

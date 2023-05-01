@@ -22,6 +22,11 @@
         </activity>
         <activity android:name=".ActivitySignUp"></activity>
         <activity android:name=".ActivityDashboard"></activity>
+        <activity android:name=".ActivityKindergarten"></activity>
+        <activity android:name=".ActivityElementary"></activity>
+        <activity android:name=".ActivityHighSchool"></activity>
+        <activity android:name=".ActivityElementary1To6"></activity>
+        <activity android:name=".ActivityElementary7To9"></activity>
     </application>
 
 </manifest>

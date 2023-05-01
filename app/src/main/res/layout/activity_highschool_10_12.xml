@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:andriod="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLoginPage"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".ActivityHighSchool">
 
     <LinearLayout android:gravity="center_horizontal"
-        android:id="@+id/linearGrade7Nine"
+        android:id="@+id/linearGradeSectionKG"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:orientation="vertical"
@@ -20,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:scaleType="fitXY"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_rectangle5_152x360"/>
+                android:src="@drawable/img_rectangle5_152x360"/>
 
 
             <LinearLayout android:id="@+id/linearRowarrowleft"
@@ -38,6 +45,7 @@
                     android:layout_marginTop="@dimen/_25pxv"
                     android:layout_marginBottom="@dimen/_111pxv"
                     android:scaleType="fitXY"
+                    android:onClick="goBackToDashboard"
                     android:src="@drawable/img_arrowleft"
                     tools:ignore="ContentDescription" />
 
@@ -48,21 +56,12 @@
                     android:layout_marginStart="@dimen/_120pxh"
                     android:layout_marginBottom="@dimen/_63pxv">
 
-                    <ImageView
-                        android:id="@+id/imageEllipseTwo"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="start"
-                        android:scaleType="fitXY"
-                        tools:ignore="ContentDescription"
-                        tools:src="@drawable/img_ellipse2_89x202" />
-
                     <LinearLayout
                         android:id="@+id/linearColumnwelcomeuser"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
-                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_50pxh"
                         android:layout_marginTop="@dimen/_14pxv"
                         android:layout_marginEnd="@dimen/_6pxh"
                         android:layout_marginBottom="@dimen/_14pxv"
@@ -77,69 +76,23 @@
                             android:ellipsize="end"
                             android:gravity="start"
                             android:lineSpacingExtra="@dimen/_4pxh"
-                            android:singleLine="true"
-                            tools:ignore="TextSizeCheck"
-                            tools:text="@string/lbl_welcome_user" />
+                            android:singleLine="true" />
 
-                        <TextView
-                            android:id="@+id/txtDate2312023"
-                            style="@style/txtInterregular18"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_10pxh"
-                            android:layout_marginTop="@dimen/_9pxv"
-                            android:ellipsize="end"
-                            android:gravity="end"
-                            android:lineSpacingExtra="@dimen/_4pxh"
-                            android:singleLine="true"
-                            tools:ignore="TextSizeCheck"
-                            tools:text="@string/lbl_date_23_1_2023" />
+                        <TextClock
+                            android:id="@+id/textClock"
+                            android:layout_width="@dimen/_150pxh"
+                            android:layout_height="@dimen/_40pxh"
+                            android:layout_marginTop="@dimen/_8pxh"
+                            android:textSize="24sp" />
+
                     </LinearLayout>
                 </FrameLayout>
             </LinearLayout>
         </FrameLayout>
 
-        <LinearLayout
-            android:gravity="center_vertical"
-            android:id="@+id/linearRowsearch"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_39pxh"
-            android:layout_marginStart="@dimen/_39pxh"
-            android:layout_marginTop="@dimen/_2pxh"
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            style="@style/groupStylebluegray_100cornerRadius">
-            <ImageView android:id="@+id/imageSearch"
-                android:layout_height="@dimen/_18pxh"
-                android:layout_marginBottom="@dimen/_8pxv"
-                android:layout_marginStart="@dimen/_31pxh"
-                android:layout_marginTop="@dimen/_10pxv"
-                android:layout_width="@dimen/_16pxh"
-                android:scaleType="fitXY"
-                android:src="@drawable/img_search"
-                tools:ignore="ContentDescription" tools:src="@drawable/img_search"/>
-
-            <EditText
-                android:id="@id/searchStudents"
-                style="@style/txtInterregular15"
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_26pxh"
-                android:layout_marginTop="@dimen/_11pxv"
-                android:layout_marginEnd="@dimen/_74pxh"
-                android:layout_marginBottom="@dimen/_7pxv"
-                android:ellipsize="end"
-                android:lineSpacingExtra="@dimen/_4pxh"
-                android:minHeight="48dp"
-                android:singleLine="true"
-                tools:ignore="LabelFor,TextSizeCheck"
-                tools:text="@string/msg_search_for_stud"
-                android:autofillHints=""
-                android:inputType="textShortMessage" />
-        </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnGrSeven"
+            android:id="@+id/btnGrTen"
             style="@style/btnSolidRounded_2"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -152,11 +105,11 @@
             android:textAllCaps="false"
             android:textSize="@dimen/_18pxh"
             tools:ignore="SpUsage,TextSizeCheck"
-            tools:text="Gr 7" />
+            android:text="Gr 10" />
 
         <LinearLayout
             android:gravity="center_vertical"
-            android:id="@+id/btnGrSevenSaOne"
+            android:id="@+id/btnGrTenSaOne"
             android:layout_height="40dp"
             android:layout_marginEnd="@dimen/_39pxh"
             android:layout_marginStart="@dimen/_39pxh"
@@ -165,7 +118,7 @@
             style="@style/groupStylegray_400cornerRadius">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnGrSevenSa"
+                android:id="@+id/btnGrTenSa"
                 style="@style/txtInterregular18"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
@@ -179,7 +132,7 @@
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
-                tools:text="@string/lbl_section_a" />
+                android:text="@string/lbl_section_a" />
             <ImageView android:id="@+id/imageArrowright"
                 android:layout_height="@dimen/_8pxh"
                 android:layout_marginBottom="@dimen/_17pxv"
@@ -193,7 +146,7 @@
         </LinearLayout>
 
         <LinearLayout android:gravity="center_vertical"
-            android:id="@+id/btnGrSevenSbOne"
+            android:id="@+id/btnGrTenSbOne"
             android:layout_height="40dp"
             android:layout_marginEnd="@dimen/_39pxh"
             android:layout_marginStart="@dimen/_39pxh"
@@ -203,7 +156,7 @@
             style="@style/groupStylegray_400cornerRadius">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnGrSevenSb"
+                android:id="@+id/btnGrTenSb"
                 style="@style/txtInterregular18"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
@@ -215,9 +168,10 @@
                 android:ellipsize="end"
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:singleLine="true"
+
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
-                tools:text="@string/lbl_section_b" />
+                android:text="@string/lbl_section_b" />
             <ImageView android:id="@+id/imageArrowrightOne"
                 android:layout_height="@dimen/_8pxh"
                 android:layout_marginBottom="@dimen/_16pxv"
@@ -231,7 +185,7 @@
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnGrEight"
+            android:id="@+id/btnGrEleven"
             style="@style/btnSolidRounded_2"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -244,11 +198,11 @@
             android:textAllCaps="false"
             android:textSize="@dimen/_18pxh"
             tools:ignore="SpUsage,TextSizeCheck"
-            tools:text="Gr 8" />
+            android:text="Gr 11" />
 
         <LinearLayout
             android:gravity="center_vertical"
-            android:id="@+id/btnGrEightSaOne"
+            android:id="@+id/btnGrElevenSaOne"
             android:layout_height="40dp"
             android:layout_marginEnd="@dimen/_39pxh"
             android:layout_marginStart="@dimen/_39pxh"
@@ -256,7 +210,7 @@
             android:orientation="horizontal" style="@style/groupStylegray_400cornerRadius">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnGrEightSa"
+                android:id="@+id/btnGrElevenSa"
                 style="@style/txtInterregular18"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
@@ -270,7 +224,7 @@
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck"
-                tools:text="@string/lbl_section_a" />
+                android:text="@string/lbl_section_a" />
             <ImageView android:id="@+id/imageArrowrightTwo"
                 android:layout_height="@dimen/_8pxh"
                 android:layout_marginBottom="@dimen/_17pxv"
@@ -283,7 +237,7 @@
                 tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright_gray_902"/>
         </LinearLayout>
         <LinearLayout android:gravity="center_vertical"
-            android:id="@+id/btnGrEightSbOne"
+            android:id="@+id/btnGrElevenSbOne"
             android:layout_height="40dp"
             android:layout_marginEnd="@dimen/_39pxh"
             android:layout_marginStart="@dimen/_39pxh"
@@ -292,7 +246,7 @@
             android:orientation="horizontal" style="@style/groupStylegray_400cornerRadius">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnGrEightSb"
+                android:id="@+id/btnGrElevenSb"
                 style="@style/txtInterregular18"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
@@ -306,7 +260,7 @@
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck"
-                tools:text="@string/lbl_section_b" />
+                android:text="@string/lbl_section_b" />
             <ImageView android:id="@+id/imageArrowrightThree"
                 android:layout_height="@dimen/_8pxh"
                 android:layout_marginBottom="@dimen/_17pxv"
@@ -320,7 +274,7 @@
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnGrNine"
+            android:id="@+id/btnGrTweleve"
             style="@style/btnSolidRounded_2"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -333,11 +287,11 @@
             android:textAllCaps="false"
             android:textSize="@dimen/_18pxh"
             tools:ignore="SpUsage,TextSizeCheck"
-            tools:text="Gr 9" />
+            android:text="Gr 12" />
 
         <LinearLayout
             android:gravity="center_vertical"
-            android:id="@+id/btnGrNineSaOne"
+            android:id="@+id/btnGrTweleveSaOne"
             android:layout_height="40dp"
             android:layout_marginEnd="@dimen/_39pxh"
             android:layout_marginStart="@dimen/_39pxh"
@@ -345,7 +299,7 @@
             android:orientation="horizontal" style="@style/groupStylegray_400cornerRadius">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnGrNineSa"
+                android:id="@+id/btnGrTweleveSa"
                 style="@style/txtInterregular18"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
@@ -359,7 +313,7 @@
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck"
-                tools:text="@string/lbl_section_a" />
+                android:text="@string/lbl_section_a" />
             <ImageView
                 android:id="@+id/imageArrowrightFour"
                 android:layout_height="@dimen/_8pxh"
@@ -374,7 +328,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/btnGrNineSbOne"
+            android:id="@+id/btnGrTweleveSbOne"
             style="@style/groupStylegray_400cornerRadius"
             android:layout_width="match_parent"
             android:layout_height="42dp"
@@ -385,7 +339,7 @@
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnGrNineSb"
+                android:id="@+id/btnGrTweleveSb"
                 style="@style/txtInterregular18"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
@@ -399,7 +353,7 @@
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck"
-                tools:text="@string/lbl_section_b" />
+                android:text="@string/lbl_section_b" />
 
             <ImageView
                 android:id="@+id/imageArrowrightFive"
@@ -415,4 +369,4 @@
                 tools:src="@drawable/img_arrowright_gray_902" />
         </LinearLayout>
     </LinearLayout>
-</layout>
+</RelativeLayout>
