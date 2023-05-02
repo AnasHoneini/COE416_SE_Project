@@ -49,44 +49,6 @@
                     android:src="@drawable/img_arrowleft"
                     tools:ignore="ContentDescription" />
 
-                <FrameLayout
-                    android:id="@+id/frameStackellipsetwo"
-                    android:layout_width="@dimen/_202pxh"
-                    android:layout_height="91dp"
-                    android:layout_marginStart="@dimen/_120pxh"
-                    android:layout_marginBottom="@dimen/_63pxv">
-
-                    <LinearLayout
-                        android:id="@+id/linearColumnwelcomeuser"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|end"
-                        android:layout_marginStart="@dimen/_50pxh"
-                        android:layout_marginTop="@dimen/_14pxv"
-                        android:layout_marginEnd="@dimen/_6pxh"
-                        android:layout_marginBottom="@dimen/_14pxv"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/txtWelcomeuser"
-                            style="@style/txtInterregular18"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10pxh"
-                            android:ellipsize="end"
-                            android:gravity="start"
-                            android:lineSpacingExtra="@dimen/_4pxh"
-                            android:singleLine="true" />
-
-                        <TextClock
-                            android:id="@+id/textClock"
-                            android:layout_width="@dimen/_150pxh"
-                            android:layout_height="@dimen/_40pxh"
-                            android:layout_marginTop="@dimen/_8pxh"
-                            android:textSize="24sp" />
-
-                    </LinearLayout>
-                </FrameLayout>
             </LinearLayout>
         </FrameLayout>
 

@@ -18,24 +18,25 @@
         <FrameLayout
             android:layout_gravity="top|start"
             android:id="@+id/frameStackrectanglefive"
-            android:layout_height="@dimen/_152pxv"
+            android:layout_height="@dimen/_167pxh"
             android:layout_width="match_parent">
 
-            <ImageView android:id="@+id/imageRectangleFive"
-                android:layout_gravity="start"
-                android:layout_height="@dimen/_120pxh"
+            <ImageView
+                android:id="@+id/imageRectangleFive"
                 android:layout_width="match_parent"
+                android:layout_height="179dp"
+                android:layout_gravity="start"
                 android:scaleType="fitXY"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/img_rectangle5_152x360"/>
+                android:src="@drawable/img"
+                tools:ignore="ContentDescription" />
 
 
-            <LinearLayout android:id="@+id/linearRowarrowleft"
-                android:layout_gravity="start"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:id="@+id/linearRowarrowleft"
                 android:layout_width="match_parent"
-                android:orientation="horizontal"
-                style="@style/groupStyledeep_orange_A400_d6">
+                android:layout_height="180dp"
+                android:layout_gravity="start"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/imageArrowleft"
@@ -44,49 +45,11 @@
                     android:layout_marginStart="@dimen/_13pxh"
                     android:layout_marginTop="@dimen/_25pxv"
                     android:layout_marginBottom="@dimen/_111pxv"
-                    android:scaleType="fitXY"
                     android:onClick="goBackToDashboard"
+                    android:scaleType="fitXY"
                     android:src="@drawable/img_arrowleft"
                     tools:ignore="ContentDescription" />
 
-                <FrameLayout
-                    android:id="@+id/frameStackellipsetwo"
-                    android:layout_width="@dimen/_202pxh"
-                    android:layout_height="91dp"
-                    android:layout_marginStart="@dimen/_120pxh"
-                    android:layout_marginBottom="@dimen/_63pxv">
-
-                    <LinearLayout
-                        android:id="@+id/linearColumnwelcomeuser"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|end"
-                        android:layout_marginStart="@dimen/_50pxh"
-                        android:layout_marginTop="@dimen/_14pxv"
-                        android:layout_marginEnd="@dimen/_6pxh"
-                        android:layout_marginBottom="@dimen/_14pxv"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/txtWelcomeuser"
-                            style="@style/txtInterregular18"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10pxh"
-                            android:ellipsize="end"
-                            android:gravity="start"
-                            android:lineSpacingExtra="@dimen/_4pxh"
-                            android:singleLine="true" />
-
-                        <TextClock
-                            android:id="@+id/textClock"
-                            android:layout_width="@dimen/_150pxh"
-                            android:layout_height="@dimen/_40pxh"
-                            android:layout_marginTop="@dimen/_8pxh"
-                            android:textSize="24sp" />
-
-                    </LinearLayout>
-                </FrameLayout>
             </LinearLayout>
         </FrameLayout>
 
