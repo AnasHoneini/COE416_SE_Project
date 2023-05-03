@@ -27,6 +27,8 @@
         <activity android:name=".ActivityHighSchool"></activity>
         <activity android:name=".ActivityElementary1To6"></activity>
         <activity android:name=".ActivityElementary7To9"></activity>
+        <activity android:name=".ActivityStudentList"></activity>
+        <activity android:name=".ActivityReportList"></activity>
     </application>
 
 </manifest>

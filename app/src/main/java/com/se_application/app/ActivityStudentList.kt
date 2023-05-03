@@ -5,18 +5,22 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
 
-class ActivityKindergarten: AppCompatActivity() {
-
+class ActivityStudentList: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_kindergarten)
-
+        setContentView(R.layout.activity_student_list)
 
     }
 
-    fun goBackToDashboard(view: View) {
-        val intent = Intent(this, ActivityDashboard::class.java)
+    fun goBackToParent(view: View) {
+        val intent = Intent(this, ActivityKindergarten::class.java)
+        startActivity(intent)
+    }
+
+    fun goToReport(view: View) {
+        val intent = Intent(this, ActivityReportList::class.java)
         startActivity(intent)
     }
 
@@ -24,5 +28,4 @@ class ActivityKindergarten: AppCompatActivity() {
         val intent = Intent(this, ActivityStudentList::class.java)
         startActivity(intent)
     }
-
 }

@@ -16,7 +16,7 @@ def glideVersion = '4.11.0'
 android {
     compileSdkVersion 33
     buildToolsVersion "30.0.3"
-
+    compileSdkPreview "UpsideDownCake"
     defaultConfig {
         applicationId "com.se_application.app"
         minSdkVersion 23
@@ -73,6 +73,8 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.10.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
     implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'
+    implementation 'androidx.core:core-ktx:1.10.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
     testImplementation 'junit:junit:4.13.2'
     implementation 'com.google.firebase:firebase-auth:22.0.0'
 
