@@ -18,16 +18,16 @@
         <FrameLayout
             android:layout_gravity="top|start"
             android:id="@+id/frameStackrectanglefive"
-            android:layout_height="@dimen/_169pxv"
+            android:layout_height="@dimen/_189pxv"
             android:layout_width="match_parent">
 
             <ImageView
                 android:id="@+id/imageRectangleFive"
                 android:layout_width="match_parent"
-                android:layout_height="176dp"
+                android:layout_height="188dp"
                 android:layout_gravity="start"
                 android:scaleType="fitXY"
-                android:src="@drawable/img"
+                android:src="@drawable/img_3"
                 tools:ignore="ContentDescription" />
 
 
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginStart="@dimen/_39pxh"
-            android:layout_marginTop="@dimen/_70pxv"
+            android:layout_marginTop="@dimen/_50pxv"
             android:layout_marginEnd="@dimen/_39pxh"
             android:ellipsize="end"
             android:gravity="center"

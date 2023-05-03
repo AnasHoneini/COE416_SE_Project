@@ -11,6 +11,8 @@ import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 
 class ActivitySignUp: AppCompatActivity() {
 
@@ -26,6 +28,10 @@ class ActivitySignUp: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup_page)
+        FirebaseAuth.getInstance()
+
+
+
 
         username = findViewById(R.id.myUserName)
         email = findViewById(R.id.textEmail)
@@ -90,9 +96,50 @@ class ActivitySignUp: AppCompatActivity() {
 
     fun goBackToLogin(view: View){
         if (validateInput()) {
-            val intent = Intent(this, ActivityLogin::class.java)
-            intent.putExtra("message", "Signed up Successfully")
-            startActivity(intent)
+            // Get user's input data
+            val userName = username.text.toString()
+            val userEmail = email.text.toString()
+            val userPassword = password.text.toString()
+
+            // Create a new user object with the input data
+            val user = User(userName, userEmail, userPassword, selectedPosition)
+
+            // Get a reference to the Firebase Authentication instance
+            val mAuth = FirebaseAuth.getInstance()
+
+            // Create a new user in Firebase Authentication
+            mAuth.createUserWithEmailAndPassword(userEmail, userPassword)
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
+
+                        // Get a reference to the Firebase Realtime Database instance
+                        val database = FirebaseDatabase.getInstance()
+                        val ref = database.getReference("User")
+
+                        // Add the new user to the "users" collection in the database
+                        ref.child(mAuth.currentUser!!.uid).setValue(user)
+                            .addOnSuccessListener {
+                                // Show a success message
+                                Snackbar.make(view, "User created successfully", Snackbar.LENGTH_SHORT).show()
+                            }
+                            .addOnFailureListener {
+                                // Show an error message
+                                Snackbar.make(view, "Error creating user: ${it.message}", Snackbar.LENGTH_SHORT).show()
+                            }
+
+                        // Sign out the user
+                        mAuth.signOut()
+
+                        // Go back to the login activity
+                        val intent = Intent(this, ActivityLogin::class.java)
+                        intent.putExtra("message", "Signed up Successfully")
+                        startActivity(intent)
+
+                    } else {
+                        // If sign in fails, display a message to the user.
+                        Snackbar.make(view, "Error creating user: ${task.exception?.message}", Snackbar.LENGTH_SHORT).show()
+                    }
+                }
         }
     }
 

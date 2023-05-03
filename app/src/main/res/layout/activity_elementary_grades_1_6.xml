@@ -18,24 +18,24 @@
         <FrameLayout
             android:layout_gravity="top|start"
             android:id="@+id/frameStackrectanglefive"
-            android:layout_height="@dimen/_152pxv"
+            android:layout_height="@dimen/_182pxv"
             android:layout_width="match_parent">
 
-            <ImageView android:id="@+id/imageRectangleFive"
-                android:layout_gravity="start"
-                android:layout_height="@dimen/_120pxh"
+            <ImageView
+                android:id="@+id/imageRectangleFive"
                 android:layout_width="match_parent"
+                android:layout_height="188dp"
+                android:layout_gravity="start"
                 android:scaleType="fitXY"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/img_rectangle5_152x360"/>
+                android:src="@drawable/img_3"
+                tools:ignore="ContentDescription" />
 
 
             <LinearLayout android:id="@+id/linearRowarrowleft"
                 android:layout_gravity="start"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:orientation="horizontal"
-                style="@style/groupStyledeep_orange_A400_d6">
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/imageArrowleft"
@@ -57,8 +57,8 @@
             android:id="@+id/linearRowgrcounter"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_31pxh"
-            android:layout_marginStart="@dimen/_45pxh"
-            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_marginStart="@dimen/_33pxh"
+            android:layout_marginTop="@dimen/_68pxv"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:baselineAligned="false">
@@ -90,7 +90,7 @@
                             android:paddingBottom="@dimen/_10pxv"
                             android:singleLine="true"
                             tools:ignore="Autofill,TextSizeCheck"
-                            tools:text="@string/lbl_gr_1" />
+                            android:text="@string/lbl_gr_1" />
 
                         <LinearLayout
                             android:id="@+id/linearRowGr1Sa"
@@ -117,7 +117,7 @@
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
                                 tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextSizeCheck"
-                                tools:text="@string/lbl_a" />
+                                android:text="@string/lbl_a" />
 
                             <ImageView
                                 android:id="@id/imageArrowright"
@@ -158,7 +158,7 @@
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
                                 tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextSizeCheck"
-                                tools:text="@string/lbl_b" />
+                                android:text="@string/lbl_b" />
 
                             <ImageView
                                 android:id="@+id/imageArrowright1"
@@ -194,10 +194,9 @@
                             android:paddingEnd="@dimen/_30pxh"
                             android:paddingBottom="@dimen/_10pxv"
                             android:singleLine="true"
-                            android:text="@string/lbl_gr_3"
                             android:textAllCaps="false"
                             tools:ignore="TextSizeCheck"
-                            tools:text="@string/lbl_gr_3" />
+                            android:text="@string/lbl_gr_3" />
 
                         <LinearLayout
                             android:id="@+id/linearRowGr3Sa"
@@ -224,7 +223,7 @@
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
-                                tools:text="@string/lbl_a" />
+                                android:text="@string/lbl_a" />
 
                             <ImageView
                                 android:id="@+id/imageArrowright2"
@@ -265,7 +264,7 @@
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck,TextSizeCheck"
-                                tools:text="@string/lbl_b" />
+                                android:text="@string/lbl_b" />
 
                             <ImageView
                                 android:id="@+id/imageArrowright3"
@@ -301,10 +300,9 @@
                             android:paddingEnd="@dimen/_30pxh"
                             android:paddingBottom="@dimen/_10pxv"
                             android:singleLine="true"
-                            android:text="@string/lbl_gr_5"
                             android:textAllCaps="false"
                             tools:ignore="TextSizeCheck"
-                            tools:text="@string/lbl_gr_5" />
+                            android:text="@string/lbl_gr_5" />
 
                         <LinearLayout
                             android:id="@+id/linearRowGr5Sa"
@@ -331,7 +329,7 @@
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck,TextSizeCheck"
-                                tools:text="@string/lbl_a" />
+                                android:text="@string/lbl_a" />
 
                             <ImageView
                                 android:id="@+id/imageArrowright4"
@@ -372,7 +370,7 @@
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
-                                tools:text="@string/lbl_b" />
+                                android:text="@string/lbl_b" />
 
                             <ImageView
                                 android:id="@+id/imageArrowright5"
@@ -414,10 +412,9 @@
                             android:paddingEnd="@dimen/_30pxh"
                             android:paddingBottom="@dimen/_10pxv"
                             android:singleLine="true"
-                            android:text="@string/lbl_gr_2"
                             android:textAllCaps="false"
                             tools:ignore="TextSizeCheck,TextSizeCheck"
-                            tools:text="@string/lbl_gr_2" />
+                            android:text="@string/lbl_gr_2" />
 
                         <LinearLayout
                             android:id="@+id/linearRowGr2Sa"
@@ -444,7 +441,7 @@
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
-                                tools:text="@string/lbl_a" />
+                                android:text="@string/lbl_a" />
 
                             <ImageView
                                 android:id="@+id/imageArrowright6"
@@ -485,7 +482,7 @@
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
-                                tools:text="@string/lbl_b" />
+                                android:text="@string/lbl_b" />
 
                             <ImageView
                                 android:id="@+id/imageArrowright7"
@@ -522,10 +519,9 @@
                             android:paddingEnd="@dimen/_30pxh"
                             android:paddingBottom="@dimen/_10pxv"
                             android:singleLine="true"
-                            android:text="@string/lbl_gr_4"
                             android:textAllCaps="false"
                             tools:ignore="TextSizeCheck,TextSizeCheck"
-                            tools:text="@string/lbl_gr_4" />
+                            android:text="@string/lbl_gr_4" />
 
                         <LinearLayout
                             android:id="@+id/linearRowGr4Sa"
@@ -552,7 +548,7 @@
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
-                                tools:text="@string/lbl_a" />
+                                android:text="@string/lbl_a" />
 
                             <ImageView
                                 android:id="@+id/imageArrowright9"
@@ -592,7 +588,7 @@
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
-                                tools:text="@string/lbl_b" />
+                                android:text="@string/lbl_b" />
 
                             <ImageView
                                 android:id="@+id/imageArrowright10"
@@ -629,10 +625,9 @@
                             android:paddingEnd="@dimen/_30pxh"
                             android:paddingBottom="@dimen/_10pxv"
                             android:singleLine="true"
-                            android:text="@string/lbl_gr_6"
                             android:textAllCaps="false"
                             tools:ignore="TextSizeCheck"
-                            tools:text="@string/lbl_gr_6" />
+                            android:text="@string/lbl_gr_6" />
 
                         <LinearLayout
                             android:id="@+id/linearRowGr6Sa"
@@ -659,7 +654,7 @@
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
-                                tools:text="@string/lbl_a" />
+                                android:text="@string/lbl_a" />
 
                             <ImageView
                                 android:id="@+id/imageArrowright11"
@@ -700,7 +695,7 @@
                                 android:lineSpacingExtra="@dimen/_4pxh"
                                 android:singleLine="true"
                                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"
-                                tools:text="@string/lbl_b" />
+                                android:text="@string/lbl_b" />
 
                             <ImageView
                                 android:id="@+id/imageArrowright12"

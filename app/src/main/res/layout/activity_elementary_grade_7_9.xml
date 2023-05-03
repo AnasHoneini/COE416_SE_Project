@@ -18,24 +18,23 @@
         <FrameLayout
             android:layout_gravity="top|start"
             android:id="@+id/frameStackrectanglefive"
-            android:layout_height="@dimen/_152pxv"
+            android:layout_height="@dimen/_182pxv"
             android:layout_width="match_parent">
 
             <ImageView android:id="@+id/imageRectangleFive"
                 android:layout_gravity="start"
-                android:layout_height="@dimen/_120pxh"
+                android:layout_height="@dimen/_160pxh"
                 android:layout_width="match_parent"
                 android:scaleType="fitXY"
                 tools:ignore="ContentDescription"
-                android:src="@drawable/img_rectangle5_152x360"/>
+                android:src="@drawable/img_3"/>
 
 
             <LinearLayout android:id="@+id/linearRowarrowleft"
                 android:layout_gravity="start"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:orientation="horizontal"
-                style="@style/groupStyledeep_orange_A400_d6">
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/imageArrowleft"
@@ -58,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginStart="@dimen/_39pxh"
-            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_marginTop="@dimen/_65pxv"
             android:layout_marginEnd="@dimen/_39pxh"
             android:ellipsize="end"
             android:gravity="center"
@@ -66,7 +65,7 @@
             android:textAllCaps="false"
             android:textSize="@dimen/_18pxh"
             tools:ignore="SpUsage,TextSizeCheck"
-            tools:text="Gr 7" />
+            android:text="Gr 7" />
 
         <LinearLayout
             android:gravity="center_vertical"
@@ -93,7 +92,7 @@
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
-                tools:text="@string/lbl_section_a" />
+                android:text="@string/lbl_section_a" />
             <ImageView android:id="@+id/imageArrowright"
                 android:layout_height="@dimen/_8pxh"
                 android:layout_marginBottom="@dimen/_17pxv"
@@ -131,7 +130,7 @@
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
-                tools:text="@string/lbl_section_b" />
+                android:text="@string/lbl_section_b" />
             <ImageView android:id="@+id/imageArrowrightOne"
                 android:layout_height="@dimen/_8pxh"
                 android:layout_marginBottom="@dimen/_16pxv"
@@ -158,7 +157,7 @@
             android:textAllCaps="false"
             android:textSize="@dimen/_18pxh"
             tools:ignore="SpUsage,TextSizeCheck"
-            tools:text="Gr 8" />
+            android:text="Gr 8" />
 
         <LinearLayout
             android:gravity="center_vertical"
@@ -184,7 +183,7 @@
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck"
-                tools:text="@string/lbl_section_a" />
+                android:text="@string/lbl_section_a" />
             <ImageView android:id="@+id/imageArrowrightTwo"
                 android:layout_height="@dimen/_8pxh"
                 android:layout_marginBottom="@dimen/_17pxv"
@@ -220,7 +219,7 @@
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck"
-                tools:text="@string/lbl_section_b" />
+                android:text="@string/lbl_section_b" />
             <ImageView android:id="@+id/imageArrowrightThree"
                 android:layout_height="@dimen/_8pxh"
                 android:layout_marginBottom="@dimen/_17pxv"
@@ -247,7 +246,7 @@
             android:textAllCaps="false"
             android:textSize="@dimen/_18pxh"
             tools:ignore="SpUsage,TextSizeCheck"
-            tools:text="Gr 9" />
+            android:text="Gr 9" />
 
         <LinearLayout
             android:gravity="center_vertical"
@@ -273,7 +272,7 @@
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck"
-                tools:text="@string/lbl_section_a" />
+                android:text="@string/lbl_section_a" />
             <ImageView
                 android:id="@+id/imageArrowrightFour"
                 android:layout_height="@dimen/_8pxh"
@@ -313,7 +312,7 @@
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck"
-                tools:text="@string/lbl_section_b" />
+                android:text="@string/lbl_section_b" />
 
             <ImageView
                 android:id="@+id/imageArrowrightFive"

@@ -27,7 +27,7 @@
                 android:layout_height="206dp"
                 android:layout_gravity="start"
                 android:scaleType="fitXY"
-                android:src="@drawable/img"
+                android:src="@drawable/img_3"
                 tools:ignore="ContentDescription" />
 
 

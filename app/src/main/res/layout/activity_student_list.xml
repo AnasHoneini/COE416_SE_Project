@@ -22,35 +22,23 @@
                 android:layout_marginTop="@dimen/_20pxv"
                 android:layout_marginBottom="@dimen/_94pxv"
                 android:scaleType="fitXY"
+                android:onClick="goBackToElementaryDashboard"
                 android:src="@drawable/img_arrowleft"
-                tools:ignore="ContentDescription"
-                tools:src="@drawable/img_arrowleft" />
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/txtGrade6Secti"
                 style="@style/txtInterextrabold18_1"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/_19pxh"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_55pxh"
-                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_marginTop="@dimen/_24pxv"
                 android:layout_weight="0.79"
                 android:ellipsize="end"
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:singleLine="true"
-                tools:text="@string/msg_grade_6_secti" />
+                android:text="@string/msg_grade_6_secti" />
 
-            <ImageView
-                android:id="@+id/imageMaximize"
-                android:layout_width="@dimen/_22pxh"
-                android:layout_height="@dimen/_19pxh"
-                android:layout_marginStart="@dimen/_55pxh"
-                android:layout_marginTop="@dimen/_15pxv"
-                android:layout_marginEnd="@dimen/_18pxh"
-                android:layout_marginBottom="@dimen/_106pxv"
-                android:scaleType="fitXY"
-                android:src="@drawable/img_maximize"
-                tools:ignore="ContentDescription"
-                tools:src="@drawable/img_maximize" />
         </LinearLayout>
 
         <LinearLayout
@@ -140,19 +128,6 @@
                         android:background="@color/deep_orange_200" />
                 </LinearLayout>
             </LinearLayout>
-
-            <TextView
-                android:id="@+id/txtTaptoviewmor"
-                style="@style/txtInterbold14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_16pxh"
-                android:layout_marginTop="@dimen/_6pxv"
-                android:layout_marginEnd="@dimen/_16pxh"
-                android:ellipsize="end"
-                android:gravity="center_horizontal"
-                android:singleLine="true"
-                tools:text="@string/msg_tap_to_view_mor" />
 
             <View
                 android:id="@+id/lineLineFive"
