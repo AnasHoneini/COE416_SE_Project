@@ -25,9 +25,9 @@
             android:id="@+id/linearColumnusername"
             style="@style/groupStylewhite_A700"
             android:layout_width="match_parent"
-            android:layout_height="432dp"
+            android:layout_height="499dp"
             android:layout_marginStart="@dimen/_16pxh"
-            android:layout_marginTop="@dimen/_150pxv"
+            android:layout_marginTop="@dimen/_119pxv"
             android:layout_marginEnd="@dimen/_16pxh"
             android:gravity="start"
             android:orientation="vertical">
@@ -42,7 +42,7 @@
                 android:layout_marginEnd="@dimen/_38pxh"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="Username"
+                android:text="First Name"
                 tools:ignore="TextSizeCheck,TextSizeCheck" />
 
             <EditText
@@ -54,7 +54,34 @@
                 android:layout_marginTop="@dimen/_2pxv"
                 android:layout_marginEnd="@dimen/_32pxh"
                 android:background="@color/gray_401"
-                android:hint="@string/enter_your_username"
+                android:hint="Enter your First Name"
+                android:inputType="textPersonName"
+                android:labelFor="@id/myLastName"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/txtLastname"
+                style="@style/txtInterregular12"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_36pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_marginEnd="@dimen/_38pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Last Name"
+                tools:ignore="TextSizeCheck,TextSizeCheck" />
+
+            <EditText
+                android:id="@+id/myLastName"
+                android:layout_width="@dimen/_257pxh"
+                android:layout_height="@dimen/_52pxv"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_32pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_marginEnd="@dimen/_32pxh"
+                android:background="@color/gray_401"
+                android:hint="Enter Your Last Name"
                 android:inputType="textPersonName"
                 android:labelFor="@id/myUserName"
                 tools:ignore="LabelFor" />
@@ -205,7 +232,7 @@
             android:layout_height="48dp"
             android:layout_gravity="end"
             android:layout_marginStart="@dimen/_29pxh"
-            android:layout_marginTop="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_7pxh"
             android:layout_marginEnd="@dimen/_29pxh"
             android:layout_marginBottom="@dimen/_28pxv"
             android:ellipsize="end"
@@ -224,7 +251,7 @@
     <ImageView
         android:id="@+id/imageEllipseOne"
         android:layout_width="match_parent"
-        android:layout_height="230dp"
+        android:layout_height="195dp"
         android:layout_gravity="center|start"
         android:scaleType="fitXY"
         android:src="@drawable/img"
@@ -237,7 +264,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="top|center"
         android:layout_marginStart="@dimen/_16pxh"
-        android:layout_marginTop="@dimen/_220pxh"
+        android:layout_marginTop="@dimen/_180pxh"
         android:layout_marginEnd="@dimen/_16pxh"
         android:layout_marginBottom="58dp"
         android:orientation="vertical">

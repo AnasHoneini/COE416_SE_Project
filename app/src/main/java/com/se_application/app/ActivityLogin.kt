@@ -47,7 +47,7 @@ class ActivityLogin : AppCompatActivity() {
         val message = intent.getStringExtra("message")
         if (message != null) {
             val snackbar = Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_SHORT)
-            snackbar.show()
+            snackbar.setDuration(1000).show()
         }
 
     }
@@ -98,7 +98,7 @@ class ActivityLogin : AppCompatActivity() {
                                 if (intent != null) {
                                     val sharedPref = getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
                                     val editor = sharedPref.edit()
-                                    editor.putString("username", user.username)
+                                    editor.putString("username", user.firstName)
                                     editor.apply()
                                     startActivity(intent)
                                     finish()
