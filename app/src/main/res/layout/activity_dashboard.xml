@@ -263,9 +263,9 @@
     <TextView
         android:id="@+id/txtWelcomeuser"
         style="@style/txtInterregular18"
-        android:layout_width="163dp"
+        android:layout_width="183dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_220pxh"
+        android:layout_marginStart="@dimen/_190pxh"
         android:layout_marginTop="@dimen/_8pxh"
         android:layout_marginEnd="@dimen/_10pxh"
         android:ellipsize="end"

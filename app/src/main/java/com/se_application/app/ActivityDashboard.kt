@@ -1,5 +1,6 @@
 package com.se_application.app
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -11,6 +12,8 @@ import com.google.android.material.snackbar.Snackbar
 
 class ActivityDashboard : AppCompatActivity() {
     private lateinit var txtWelcomeuser: TextView
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
@@ -19,11 +22,14 @@ class ActivityDashboard : AppCompatActivity() {
             val snackbar = Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_SHORT)
             snackbar.show()
         }
-        val username = intent.getStringExtra("username")
-        txtWelcomeuser = findViewById(R.id.txtWelcomeuser)
-        val welcomeText = "Welcome, ${username.toString()}!"
-        txtWelcomeuser.text = welcomeText
-
+        val sharedPref = getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
+        val username = sharedPref.getString("username", null)
+        if (username != null) {
+            txtWelcomeuser = findViewById(R.id.txtWelcomeuser)
+            val welcomeText = "Welcome, ${username}!"
+            txtWelcomeuser.text = welcomeText
+            Log.d("username", username.toString())
+        }
     }
 
     fun goToKindergarten(view: View) {

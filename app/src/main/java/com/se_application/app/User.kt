@@ -4,5 +4,8 @@ data class User(
     val username: String,
     val email: String,
     val password: String,
-    val position: String
-)
+    val position: String) {
+    constructor() : this("", "", "","")
+}
+
+
