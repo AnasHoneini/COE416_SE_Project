@@ -165,6 +165,18 @@
                 tools:ignore="ContentDescription"
                 tools:src="@drawable/img_arrowright_deep_orange_a401" />
         </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_signout"
+            style="@style/btnSolidRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAllCaps="false"
+            android:textColor="#212121"
+            android:background="@color/deep_orange_A400"
+            android:layout_marginStart="@dimen/_275pxh"
+            android:text="Sign Out" />
     </LinearLayout>
 
     <LinearLayout
@@ -296,5 +308,6 @@
             android:textAllCaps="false"
             tools:ignore="TextSizeCheck"
             android:text="inbox: "/>
-    </RelativeLayout>
+
+</RelativeLayout>
 

@@ -6,9 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import kotlin.math.log
 
-class StudentsListAdapter(private val studentsList: ArrayList<Student>) : RecyclerView.Adapter<StudentsListAdapter.ViewHolder>() {
+class StudentsListParentAdapter(var studentsList: ArrayList<Student>) : RecyclerView.Adapter<StudentsListParentAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -16,6 +15,12 @@ class StudentsListAdapter(private val studentsList: ArrayList<Student>) : Recycl
         return ViewHolder(view)
 
     }
+
+    fun setFilteredList(studentsList: ArrayList<Student>){
+        this.studentsList = studentsList
+        notifyDataSetChanged()
+    }
+
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val student = studentsList[position]
@@ -25,6 +30,7 @@ class StudentsListAdapter(private val studentsList: ArrayList<Student>) : Recycl
         holder.lastNameTextView.text = student.lastNameStudent
         holder.classTextView.text = student.studentClass
         holder.sectionTextView.text = student.studentSection
+        Log.d("fulname",fullName)
     }
 
     override fun getItemCount(): Int {

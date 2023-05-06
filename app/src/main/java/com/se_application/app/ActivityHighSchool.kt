@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 
 class ActivityHighSchool: AppCompatActivity() {
 
@@ -17,5 +18,23 @@ class ActivityHighSchool: AppCompatActivity() {
     fun goBackToDashboard(view: View) {
         val intent = Intent(this, ActivityDashboard::class.java)
         startActivity(intent)
+    }
+
+    fun goToStudentList(view: View) {
+        val buttonText = (view as AppCompatButton).text.toString()
+        val intent = Intent(this, ActivityStudentList::class.java)
+        intent.putExtra("BUTTON_TEXT", buttonText)
+        intent.putExtra("parent_activity", "ActivityHighSchool")
+        startActivity(intent)
+
+    }
+
+    fun goToReport(view: View) {
+        val buttonText = (view as AppCompatButton).text.toString()
+        val intent = Intent(this, ActivityStudentList::class.java)
+        intent.putExtra("BUTTON_TEXT", buttonText)
+        intent.putExtra("parent_activity", "ActivityElementary1To6")
+        startActivity(intent)
+
     }
 }

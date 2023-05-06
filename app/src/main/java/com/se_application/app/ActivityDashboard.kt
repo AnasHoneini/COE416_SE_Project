@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -30,7 +31,22 @@ class ActivityDashboard : AppCompatActivity() {
             txtWelcomeuser.text = welcomeText
             Log.d("username", username.toString())
         }
+        val btnSignOut = findViewById<Button>(R.id.btn_signout)
+
+        btnSignOut.setOnClickListener {
+            val sharedPref = getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
+            val editor = sharedPref.edit()
+            editor.clear()
+            editor.apply()
+            val intent = Intent(this, ActivityLogin::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+
     }
+
+
 
     fun goToKindergarten(view: View) {
         val username = intent.getStringExtra("username")

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:andriod="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLoginPage"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".ActivitySupervisor">
+
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearGradeSectionKG"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        style="@style/groupStylewhite_A700"/>
+
+    <FrameLayout
+        android:layout_gravity="top|start"
+        android:id="@+id/frameStackrectanglefive"
+        android:layout_height="@dimen/_258pxv"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/imageRectangleFive"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:layout_gravity="start"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_3"
+            tools:ignore="ContentDescription" />
+
+
+        <LinearLayout
+            android:id="@+id/linearRowarrowleft"
+            android:layout_width="match_parent"
+            android:layout_height="229dp"
+            android:layout_gravity="start"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageArrowleft"
+                android:layout_width="@dimen/_24pxh"
+                android:layout_height="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_25pxv"
+                android:layout_marginBottom="@dimen/_111pxv"
+                android:onClick="goBackToParent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowleft"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Supervisor"
+        style="@style/txtInterextrabold17"
+        android:layout_marginTop="@dimen/_210pxh"
+        android:layout_marginStart="@dimen/_14pxh"/>
+
+    <LinearLayout
+        android:id="@+id/linearColumninstructor"
+        style="@style/groupStyledeep_orange_A100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_240pxh"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearRowinstructor"
+            style="@style/groupStylewhite_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtInstructor"
+                style="@style/txtInterextrabold17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_weight="0.55"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@string/lbl_instructor" />
+
+            <TextView
+                android:id="@+id/txtJoeTekli"
+                style="@style/txtInterextrabold17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_70pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_marginEnd="@dimen/_71pxh"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_weight="0.45"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@string/lbl_joe_tekli" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearRowemail"
+            style="@style/groupStylewhite_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtEmail"
+                style="@style/txtInterextrabold17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_weight="0.28"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@string/lbl_email2" />
+
+            <TextView
+                android:id="@+id/txtEmailOne"
+                style="@style/txtInterextrabold17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_110pxh"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_marginEnd="@dimen/_13pxh"
+                android:layout_marginBottom="@dimen/_3pxv"
+                android:layout_weight="0.72"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@string/lbl_jtekli_lau_edu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearRowphonenumber"
+            style="@style/groupStylewhite_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginBottom="@dimen/_49pxv"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtPhoneNumber"
+                style="@style/txtInterextrabold17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_weight="0.49"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@string/lbl_phone_number" />
+
+            <TextView
+                android:id="@+id/txt96170"
+                style="@style/txtInterextrabold17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_32pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_marginEnd="@dimen/_8pxh"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_weight="0.51"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@string/lbl_961_70" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

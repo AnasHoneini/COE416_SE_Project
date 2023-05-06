@@ -82,19 +82,19 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnGrTenSa"
                 style="@style/txtInterregular18"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/_149pxh"
                 android:layout_height="40dp"
                 android:layout_marginStart="@dimen/_85pxv"
                 android:layout_marginTop="@dimen/_10pxv"
                 android:layout_marginBottom="@dimen/_10pxv"
-                android:layout_weight="0.92"
                 android:background="@android:color/transparent"
                 android:ellipsize="end"
+                android:onClick="goToStudentList"
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
-                android:text="@string/lbl_section_a" />
+                android:text="GR10 Section A" />
             <ImageView android:id="@+id/imageArrowright"
                 android:layout_height="@dimen/_8pxh"
                 android:layout_marginBottom="@dimen/_17pxv"
@@ -120,20 +120,20 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnGrTenSb"
                 style="@style/txtInterregular18"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/_149pxh"
                 android:layout_height="40dp"
                 android:layout_marginStart="@dimen/_85pxv"
                 android:layout_marginTop="@dimen/_10pxv"
                 android:layout_marginBottom="@dimen/_10pxv"
-                android:layout_weight="0.92"
                 android:background="@android:color/transparent"
                 android:ellipsize="end"
+                android:onClick="goToStudentList"
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:singleLine="true"
 
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
-                android:text="@string/lbl_section_b" />
+                android:text="GR10 Section B" />
             <ImageView android:id="@+id/imageArrowrightOne"
                 android:layout_height="@dimen/_8pxh"
                 android:layout_marginBottom="@dimen/_16pxv"
@@ -174,7 +174,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnGrElevenSa"
                 style="@style/txtInterregular18"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/_149pxh"
                 android:layout_height="40dp"
                 android:layout_marginStart="@dimen/_85pxv"
                 android:layout_marginTop="@dimen/_10pxv"
@@ -182,11 +182,13 @@
                 android:layout_weight="0.92"
                 android:background="@android:color/transparent"
                 android:ellipsize="end"
+                android:onClick="goToStudentList"
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck"
-                android:text="@string/lbl_section_a" />
+                android:text="GR11 Section A" />
+
             <ImageView android:id="@+id/imageArrowrightTwo"
                 android:layout_height="@dimen/_8pxh"
                 android:layout_marginBottom="@dimen/_17pxv"
@@ -218,11 +220,13 @@
                 android:layout_weight="0.92"
                 android:background="@android:color/transparent"
                 android:ellipsize="end"
+                android:onClick="goToStudentList"
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck"
-                android:text="@string/lbl_section_b" />
+                android:text="GR11 Section B" />
+
             <ImageView android:id="@+id/imageArrowrightThree"
                 android:layout_height="@dimen/_8pxh"
                 android:layout_marginBottom="@dimen/_17pxv"
@@ -263,19 +267,19 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnGrTweleveSa"
                 style="@style/txtInterregular18"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/_149pxh"
                 android:layout_height="48dp"
                 android:layout_marginStart="@dimen/_85pxv"
                 android:layout_marginTop="@dimen/_10pxv"
                 android:layout_marginBottom="@dimen/_10pxv"
-                android:layout_weight="0.92"
                 android:background="@android:color/transparent"
                 android:ellipsize="end"
+                android:onClick="goToStudentList"
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck"
-                android:text="@string/lbl_section_a" />
+                android:text="GR12 Section A" />
             <ImageView
                 android:id="@+id/imageArrowrightFour"
                 android:layout_height="@dimen/_8pxh"
@@ -303,19 +307,19 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnGrTweleveSb"
                 style="@style/txtInterregular18"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/_149pxh"
+                android:layout_height="42dp"
                 android:layout_marginStart="@dimen/_85pxv"
                 android:layout_marginTop="@dimen/_10pxv"
                 android:layout_marginBottom="@dimen/_10pxv"
-                android:layout_weight="0.92"
                 android:background="@android:color/transparent"
                 android:ellipsize="end"
                 android:lineSpacingExtra="@dimen/_4pxh"
+                android:onClick="goToStudentList"
                 android:singleLine="true"
+                android:text="GR12 Section B"
                 android:textSize="@dimen/_16pxh"
-                tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck"
-                android:text="@string/lbl_section_b" />
+                tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck" />
 
             <ImageView
                 android:id="@+id/imageArrowrightFive"

@@ -30,6 +30,7 @@
         <activity android:name=".ActivityStudentList"></activity>
         <activity android:name=".ActivityReportList"></activity>
         <activity android:name=".ActivityParentDashboard"></activity>
+        <activity android:name=".ActivitySupervisor"></activity>
     </application>
 
 </manifest>

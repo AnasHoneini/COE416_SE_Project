@@ -88,11 +88,12 @@
                 android:layout_weight="0.92"
                 android:background="@android:color/transparent"
                 android:ellipsize="end"
+                android:onClick="goToStudentList"
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
-                android:text="@string/lbl_section_a" />
+                android:text="GR7 Section A" />
             <ImageView android:id="@+id/imageArrowright"
                 android:layout_height="@dimen/_8pxh"
                 android:layout_marginBottom="@dimen/_17pxv"
@@ -126,11 +127,12 @@
                 android:layout_weight="0.92"
                 android:background="@android:color/transparent"
                 android:ellipsize="end"
+                android:onClick="goToStudentList"
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
-                android:text="@string/lbl_section_b" />
+                android:text="GR7 Section B" />
             <ImageView android:id="@+id/imageArrowrightOne"
                 android:layout_height="@dimen/_8pxh"
                 android:layout_marginBottom="@dimen/_16pxv"
@@ -172,7 +174,7 @@
                 android:id="@+id/btnGrEightSa"
                 style="@style/txtInterregular18"
                 android:layout_width="0dp"
-                android:layout_height="40dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/_85pxv"
                 android:layout_marginTop="@dimen/_10pxv"
                 android:layout_marginBottom="@dimen/_10pxv"
@@ -180,10 +182,11 @@
                 android:background="@android:color/transparent"
                 android:ellipsize="end"
                 android:lineSpacingExtra="@dimen/_4pxh"
+                android:onClick="goToStudentList"
                 android:singleLine="true"
+                android:text="GR8 Section A"
                 android:textSize="@dimen/_16pxh"
-                tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck"
-                android:text="@string/lbl_section_a" />
+                tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck" />
             <ImageView android:id="@+id/imageArrowrightTwo"
                 android:layout_height="@dimen/_8pxh"
                 android:layout_marginBottom="@dimen/_17pxv"
@@ -217,9 +220,10 @@
                 android:ellipsize="end"
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:singleLine="true"
+                android:onClick="goToStudentList"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck"
-                android:text="@string/lbl_section_b" />
+                android:text="GR8 Section B" />
             <ImageView android:id="@+id/imageArrowrightThree"
                 android:layout_height="@dimen/_8pxh"
                 android:layout_marginBottom="@dimen/_17pxv"
@@ -268,11 +272,12 @@
                 android:layout_weight="0.92"
                 android:background="@android:color/transparent"
                 android:ellipsize="end"
+                android:onClick="goToStudentList"
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck"
-                android:text="@string/lbl_section_a" />
+                android:text="GR9 Section A" />
             <ImageView
                 android:id="@+id/imageArrowrightFour"
                 android:layout_height="@dimen/_8pxh"
@@ -308,11 +313,12 @@
                 android:layout_weight="0.92"
                 android:background="@android:color/transparent"
                 android:ellipsize="end"
+                android:onClick="goToStudentList"
                 android:lineSpacingExtra="@dimen/_4pxh"
                 android:singleLine="true"
                 android:textSize="@dimen/_16pxh"
                 tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck"
-                android:text="@string/lbl_section_b" />
+                android:text="GR9 Section B" />
 
             <ImageView
                 android:id="@+id/imageArrowrightFive"

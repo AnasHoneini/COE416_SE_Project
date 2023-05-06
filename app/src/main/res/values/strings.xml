@@ -31,7 +31,7 @@
 <string name="lbl_gr_1">Gr 1</string>
 <string name="lbl_welcome_user">Welcome, user</string>
 <string name="lbl_gr_2">Gr 2</string>
-<string name="lbl_961_70">+961 70 *** ***</string>
+<string name="lbl_961_70">+961 70 222 333</string>
 <string name="lbl_kg_3">KG 3</string>
 <string name="lbl_kg_2">KG 2</string>
 <string name="lbl_4_23_2023">4/23/2023</string>
@@ -124,8 +124,8 @@ friend</string>
 <string name="lbl_description2">Description:</string>
 <string name="lbl_high_school">High-School</string>
 <string name="lbl_name">Name: </string>
-<string name="lbl_section_b">Section B</string>
-<string name="lbl_section_a">Section A</string>
+<string name="lbl_section_b">KG1 Section B</string>
+<string name="lbl_section_a">KG1 Section A</string>
 <string name="lbl_students">Students</string>
 <string name="lbl_name2">name</string>
 <string name="lbl_student">Student</string>
