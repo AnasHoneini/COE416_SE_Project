@@ -98,6 +98,13 @@
                 android:text="Honeini"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/mMenus"
+                android:src="@drawable/ic_more"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
         </LinearLayout>
 
 

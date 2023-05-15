@@ -29,6 +29,9 @@ class ActivityParentDashboard : AppCompatActivity() {
     private lateinit var searchView: SearchView
     private var studentArrayList= ArrayList<Student>()
     private lateinit var adapter: StudentsListParentAdapter
+    private var incidentArrayList= ArrayList<Violence_record>()
+    private lateinit var adapteri: IncidentAdapter
+    private lateinit var recyclerView: RecyclerView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -68,6 +71,12 @@ class ActivityParentDashboard : AppCompatActivity() {
         adapter = StudentsListParentAdapter(studentArrayList)
         userRecyclerView.adapter = adapter
 
+        recyclerView = findViewById(R.id.recyclerView2)
+        readFromFirebase()
+        adapteri = IncidentAdapter(incidentArrayList)
+        recyclerView.adapter = adapter
+        recyclerView.setHasFixedSize(true)
+        recyclerView.layoutManager = LinearLayoutManager(this)
 
 
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
@@ -83,6 +92,64 @@ class ActivityParentDashboard : AppCompatActivity() {
         })
 
     }
+
+
+    fun readFromFirebase() {
+        val database = FirebaseDatabase.getInstance().getReference("Student")
+        database.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                val students = ArrayList<Student>()
+                for (childSnapshot in dataSnapshot.children) {
+                    val student = childSnapshot.getValue(Student::class.java)
+                    student?.let { students.add(it) }
+                }
+                Log.d("Students", students.toString())
+
+                val violenceDatabase = FirebaseDatabase.getInstance().getReference("Violence_record")
+                violenceDatabase.addValueEventListener(object : ValueEventListener {
+                    override fun onDataChange(dataSnapshot: DataSnapshot) {
+                        val filteredRecords = ArrayList<Violence_record>()
+                        for (childSnapshot in dataSnapshot.children) {
+                            val incident = childSnapshot.child("incident").getValue(Boolean::class.java)
+                            if (incident == true) {
+                                val firstName = childSnapshot.child("Std_fname").getValue(String::class.java)
+                                val lastName = childSnapshot.child("Std_lname").getValue(String::class.java)
+                                val time = childSnapshot.child("time").getValue(String::class.java)
+                                students.firstOrNull { it.firstNameStudent == firstName && it.lastNameStudent == lastName }?.let { it ->
+                                    val isNewRecord = !incidentArrayList.any { it.Std_fname == firstName.toString() && it.Std_lname == lastName.toString() && it.incident && it.time == time.toString() }
+                                    if (isNewRecord) {
+                                        filteredRecords.add(
+                                            Violence_record(
+                                                it.firstNameStudent.toString(),
+                                                it.lastNameStudent.toString(),
+                                                true,
+                                                time.toString()
+                                            )
+                                        )
+                                    }
+                                }
+                            }
+                        }
+                        Log.d("Filtered records", filteredRecords.toString())
+                        incidentArrayList = filteredRecords
+                        val mAdapter = IncidentAdapter(incidentArrayList)
+                        recyclerView.adapter = mAdapter
+                        recyclerView.visibility = View.VISIBLE
+                        adapter.notifyDataSetChanged()
+                    }
+
+                    override fun onCancelled(error: DatabaseError) {
+                        println("Firebase read failed: " + error.message)
+                    }
+                })
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                println("Firebase read failed: " + error.message)
+            }
+        })
+    }
+
 
     private fun filterList(query: String?) {
         if (query != null) {

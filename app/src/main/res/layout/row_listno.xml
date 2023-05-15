@@ -4,33 +4,31 @@
     <LinearLayout android:id="@+id/linearRowno"
         android:layout_height="wrap_content"
         android:layout_width="match_parent" android:orientation="horizontal">
-        <TextView android:ellipsize="end" android:id="@+id/txtNo"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_1pxv"
-            android:layout_weight="0.14" android:layout_width="0dp"
-            android:singleLine="true"
-            style="@style/txtInterbold16" tools:text="@string/lbl_no"/>
-        <TextView android:ellipsize="end" android:id="@+id/txtIncident"
+
+        <TextView android:ellipsize="end"
+            android:id="@+id/time"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_1pxv"
             android:layout_marginStart="@dimen/_16pxh"
-            android:layout_weight="0.33" android:layout_width="0dp"
-            android:singleLine="true"
-            style="@style/txtIntersemibold16" textUnderline="true" tools:text="@string/lbl_incident"/>
-        <TextView android:ellipsize="end" android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            style="@style/txtIntersemibold16"
+            android:text="Time"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/firstname"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_1pxv"
-            android:layout_marginStart="@dimen/_41pxh"
-            android:layout_weight="0.21" android:layout_width="0dp"
-            android:singleLine="true"
-            style="@style/txtIntersemibold16" tools:text="@string/lbl_time"/>
-        <TextView android:ellipsize="end" android:id="@+id/txtStudent"
+            android:layout_marginStart="@dimen/_78pxh"
+            android:layout_width="wrap_content"
+            style="@style/txtIntersemibold16"
+            tools:text="First Name"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/lastname"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_1pxv"
-            android:layout_marginStart="@dimen/_42pxh"
+            android:layout_marginStart="@dimen/_75pxh"
             android:layout_marginTop="@dimen/_1pxv"
-            android:layout_weight="0.33" android:layout_width="0dp"
-            android:singleLine="true"
-            style="@style/txtIntersemibold16" tools:text="@string/lbl_student"/>
+            android:layout_width="wrap_content"
+            style="@style/txtIntersemibold16"
+            android:text="Last Name"/>
     </LinearLayout>
 </layout>

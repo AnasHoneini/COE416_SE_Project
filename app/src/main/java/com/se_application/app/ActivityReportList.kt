@@ -86,7 +86,7 @@ class ActivityReportList: AppCompatActivity() {
                 Snackbar.make(rootView, "No Data found", Snackbar.LENGTH_SHORT).show()
             } else {
                 adapter.setFilteredList(filteredList)
-                val mAdapter = ActivityStudentListAdaptor(filteredList as ArrayList<Student>)
+                val mAdapter = ActivityStudentListAdaptor(this, filteredList as ArrayList<Student>)
                 recyclerView.adapter = mAdapter
                 recyclerView.visibility = View.VISIBLE
             }
