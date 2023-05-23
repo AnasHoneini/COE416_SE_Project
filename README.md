@@ -5,6 +5,7 @@
 This project aims to promote safety and prevent violence in schools by developing software capable of recognizing students who engage in aggressive behavior. The software utilizes machine learning algorithms for fight detection and facial recognition to identify and address violent acts committed by students in schools. A mobile application has been developed to enable school administrators and parents to monitor student safety and receive alerts in case of any violent incidents involving their children. The software includes a database for storing facial images used in the face recognition process, as well as storing the names of the students.
 
 ****Features****
+
 The main features of the software include:
 
 **Fight Detection:** The software implements a deep learning model for detecting violence or any type of fight in videos. It utilizes a pre-trained VGG19 convolutional neural network (CNN) as a feature extractor and a Long-Short-Term-Memory (LSTM) neural network as a classifier. The model is trained on the ImageNet dataset, which consists of around 14.2 million images organized according to the WordNet hierarchy. It functions as a binary classifier to predict the presence or absence of violence in videos.
