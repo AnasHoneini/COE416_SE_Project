@@ -1,7 +1,5 @@
 <h1>COE416_SE_Project</h1>
-
 <br>
-
 <h2>School Guard</h2>
 <br>
 
