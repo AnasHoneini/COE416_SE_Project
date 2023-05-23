@@ -1,42 +1,16 @@
-# se_app
+**COE416_SE_Project**
+**School Guard**
 
-Built with AndroidX Support
+This project aims to promote safety and prevent violence in schools by developing software capable of recognizing students who engage in aggressive behavior. The software utilizes machine learning algorithms for fight detection and facial recognition to identify and address violent acts committed by students in schools. A mobile application has been developed to enable school administrators and parents to monitor student safety and receive alerts in case of any violent incidents involving their children. The software includes a database for storing facial images used in the face recognition process, as well as storing the names of the students.
 
-Requires Android Studio Arctic Fox | 2020.3.1 or higher.
+****Features****
+The main features of the software include:
 
-Current Kotlin Version 1.7.20
+**Fight Detection:** The software implements a deep learning model for detecting violence or any type of fight in videos. It utilizes a pre-trained VGG19 convolutional neural network (CNN) as a feature extractor and a Long-Short-Term-Memory (LSTM) neural network as a classifier. The model is trained on the ImageNet dataset, which consists of around 14.2 million images organized according to the WordNet hierarchy. It functions as a binary classifier to predict the presence or absence of violence in videos.
 
+**Facial Recognition:** The software incorporates facial recognition technology to identify students involved in violent incidents. It utilizes machine learning algorithms to analyze and match facial features extracted from stored images with real-time video footage. This enables the system to identify individuals engaged in aggressive behavior.
 
-### SDK Versions
+**Mobile Application:** The software includes a mobile application developed using Android Studio and Kotlin as the logic language. The mobile app provides a user-friendly interface for school administrators and parents to monitor student safety. It allows them to view real-time video feeds, receive alerts in case of any violent incidents involving their children, and access the database of stored facial images for identification purposes.
 
-compileSdkVersion 33
-
-buildToolsVersion "30.0.3"
-
-minSdkVersion 23
-
-targetSdkVersion 33
-
-
-### Libraries
-
-1. Retrofit- REST API Call
-https://square.github.io/retrofit/
-2. Glide - Image Loading and caching.
-https://github.com/bumptech/glide
-3. Material Design Components - Google's latest Material Components.
-https://material.io/develop/android
-4. koin - Dependency Injection
-https://insert-koin.io/
-
-### Figma design guideline for better accuracy
-
-Read our guidelines to increase the accuracy of design conversion to code by optimizing Figma designs. 
-https://docs.dhiwise.com/docs/Designguidelines/intro .
-
-### App Navigation
-
-Check your app\'s UI from the AppNavigation screens of your app.
-
-# COE416_SE_Project
+**Alert System:** The software is equipped with an alert system that sends immediate notifications to school administrators and parents when any violent incidents or fights are detected. This ensures swift response and intervention to prevent further escalation.
 
