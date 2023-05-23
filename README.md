@@ -1,10 +1,12 @@
 **COE416_SE_Project**
 
+
 **School Guard**
 
 This project aims to promote safety and prevent violence in schools by developing software capable of recognizing students who engage in aggressive behavior. The software utilizes machine learning algorithms for fight detection and facial recognition to identify and address violent acts committed by students in schools. A mobile application has been developed to enable school administrators and parents to monitor student safety and receive alerts in case of any violent incidents involving their children. The software includes a database for storing facial images used in the face recognition process, as well as storing the names of the students.
 
-****Features****
+
+****Features:****
 
 The main features of the software include:
 
